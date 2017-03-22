@@ -1,5 +1,4 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
 html {
     color: #222;
     font-size: 1em;
@@ -50,8 +49,6 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -64,108 +61,254 @@ html {
         font-size: 5px;
     }
 }
+
+h2 {
+    font-family: @fnt-headings;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: (@margin*3);
+    margin-bottom: @margin;
+}
+
+a {
+    color: @clr-primary1;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+}
+
+strong {
+    font-weight: 600;
+}
+
 #landingpage {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     font-size: 16px;
     font-family: @fnt-body;
-    color:@clr-gray1;
-    .pagehead {
-        background-color: @clr-primary1;
-        padding:(@margin*3);
+    color: @clr-gray1;
+}
+
+.pagefooter {
+  padding: (@margin*3);
+  color: @clr-gray3;
+  a {
+    color: @clr-gray3;
+    border-bottom: 1px solid @clr-gray2;
+    display: inline-block;
+  }
+  background-color: @clr-gray1;
+  .licenselink {
+    float: right;
+  }
+  @media screen and (max-width: @breakpoint1) {
+    text-align: center;
+    .licenselink {
+      float: none;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      text-align: center;
+      margin-top: (@margin*2);
     }
-    .subhead {
-      background-color: @clr-gray5;
-      padding:@margin;
-      font-family: @fnt-headings;
-      font-size: 30px;
-      font-weight: 300;
-      p {
+    .cclicense {
+      display: inline-block;
+    }
+  }
+}
+
+.pagehead {
+    background-color: @clr-primary1;
+    padding: (@margin*3);
+}
+
+.subhead {
+    background-color: @clr-gray5;
+    padding: @margin (@margin*3);
+    font-family: @fnt-headings;
+    font-size: 3rem;
+    font-weight: 300;
+
+    img {
+        width: 4rem;
+        height: 4rem;
+        vertical-align: middle;
+    }
+
+    p {
         max-width: 600px;
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-      }
-    }
-    .logo {
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: @margin*10;
-        margin-top: @margin*3;
-        width:300px;
-        height: 120px;
-        @media screen and (max-width: @breakpoint1) {
-            margin-bottom: @margin*6;
-            margin-top: @margin*2;
-            width:200px;
-            height: 80px;
-        }
-        @media screen and (max-width: @breakpoint2) {
-            margin-bottom: @margin*5;
-            margin-top: @margin;
-            width:150px;
-            height: 60px;
-        }
-    }
-    .logo img {
-        width:100%;
-        height: 100%;
-    }
-    .countdown {
-        display: flex;
-        justify-content: space-between;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        p {
-            color:@clr-black1;
-            font-size: 10.3rem;
-            margin: 0;
-        }
-        .label {
-            font-size: 2.6rem;;
-            color:white;
-        }
-        .val {
-          font-family: @fnt-counter;
-        }
-
+        margin: 2rem auto;
     }
 }
 
+.logo {
+    position: relative;
+    margin: @margin*3 auto @margin*10;
+    width: 300px;
+    height: 120px;
+    @media screen and (max-width: @breakpoint1) {
+        margin-bottom: @margin*6;
+        margin-top: @margin*2;
+        width: 200px;
+        height: 80px;
+    }
+    @media screen and (max-width: @breakpoint2) {
+        margin-bottom: @margin*5;
+        margin-top: @margin;
+        width: 150px;
+        height: 60px;
+    }
+}
 
+.logo img {
+    width: 100%;
+    height: 100%;
+}
 
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 
+    p {
+        color: @clr-black1;
+        font-size: 10.3rem;
+        margin: 0;
+    }
 
+    .label {
+        font-size: 2.6rem;
+        color: white;
+    }
 
+    .val {
+        font-family: @fnt-counter;
+    }
+}
 
+.maincontent {
+    padding: (@margin*3);
+    max-width: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: padding-box;
+    line-height: 1.5em;
+}
+// BEGIN MAILCHIMP
+.mc-field-group {
+    display: inline-block;
+    @media screen and (max-width: @breakpoint3) {
+        display: block;
+    }
+}
 
+#mc_embed_signup input[type="email"] {
+    height: 40px;
+    padding: 10px;
+    max-width: 300px;
+    border: 1px solid @clr-gray3;
+    vertical-align: top;
+    box-sizing: border-box;
+    @media screen and (max-width: @breakpoint3) {
+        width: 100%;
+    }
+}
 
+#mc_embed_signup input[type="submit"] {
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px 6px;
+    font-family: @fnt-headings;
+    font-weight: 300;
+    border: none;
+    border-bottom: 4px solid @clr-primary2;
+    color: white;
+    background-color: @clr-primary1;
+    vertical-align: top;
+    box-sizing: border-box;
+    @media screen and (max-width: @breakpoint3) {
+        width: 100%;
+        margin-top: @margin;
+    }
+}
 
+.submitwrapper {
+    display: inline-block;
+    @media screen and (max-width: @breakpoint3) {
+        display: block;
+    }
+}
+// END MAILCHIMP
+.socialmedia {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: (@margin*4) 0 (@margin*6);
 
+    a {
+        font-family: @fnt-headings;
+        font-weight: 300;
+        font-size: 20px;
+    }
 
+    img {
+        margin-right: @margin;
+    }
 
+    li {
+        margin-right: (@margin*4);
+    }
+}
+
+.slideshowwrapper {
+    background-color: @clr-gray5;
+    padding: 10px 30px;
+    max-width: 600px;
+
+    img {
+        height: 300px;
+        width: auto;
+    }
+
+    div {
+        /*width: 100%;
+    height:600px;
+    background-color: @clr-black1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    }
+
+    .slick-slide {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        color: @clr-gray2;
+    }
+
+    .slick-dots {
+        bottom: 0;
+    }
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
-
+@media only screen and (min-width: 35em) {}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 .hidden {
     display: none !important;
     visibility: hidden;
@@ -196,8 +339,8 @@ html {
     visibility: hidden;
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.clearfix:before {
     content: " ";
     display: table;
 }
@@ -209,15 +352,13 @@ html {
 .clearfix {
     *zoom: 1;
 }
-
 /* ==========================================================================
    Print styles
    ========================================================================== */
-
 @media print {
     *,
-    *:before,
-    *:after {
+    *:after,
+    *:before {
         background: transparent !important;
         color: #000 !important;
         box-shadow: none !important;
@@ -242,8 +383,8 @@ html {
         content: "";
     }
 
-    pre,
-    blockquote {
+    blockquote,
+    pre {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
@@ -252,8 +393,8 @@ html {
         display: table-header-group;
     }
 
-    tr,
-    img {
+    img,
+    tr {
         page-break-inside: avoid;
     }
 
@@ -261,9 +402,9 @@ html {
         max-width: 100% !important;
     }
 
-    p,
     h2,
-    h3 {
+    h3,
+    p {
         orphans: 3;
         widows: 3;
     }
