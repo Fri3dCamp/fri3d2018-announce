@@ -40,23 +40,23 @@
             <div class="logo">
                 <img src="/img/logo-white.svg" alt="Fri3d Camp 2018"/>
             </div>
-            <div class="countdown" data-totime="2018-08-18T00:00:00.000+02:00">
-                <div class="days">
-                    <p class="label">Dagen</p>
-                    <p class="val">000</p>
-                </div>
-                <div class="hours">
-                    <p class="label">Uren</p>
-                    <p class="val">00</p>
-                </div>
-                <div class="minutes">
-                    <p class="label">Minuten</p>
-                    <p class="val">00</p>
-                </div>
-                <div class="seconds">
-                    <p class="label">Seconden</p>
-                    <p class="val">00</p>
-                </div>
+            <div id="countdown" class="countdown" data-totime="2018-08-18T00:00:00.000+02:00">
+              <div class="days">
+                <p class="label">Dagen</p>
+                <canvas id="countdown-days" width="200" height="100"></canvas>
+              </div>
+              <div class="hours">
+                <p class="label">Uren</p>
+                <canvas id="countdown-hours" width="150" height="100"></canvas>
+              </div>
+              <div class="minutes">
+                <p class="label">Minuten</p>
+                <canvas id="countdown-minutes" width="150" height="100"></canvas>
+              </div>
+              <div class="seconds">
+                <p class="label">Seconden</p>
+                <canvas id="countdown-seconds" width="150" height="100"></canvas>
+              </div>
             </div>
         </div>
         <div class="subhead">
@@ -160,7 +160,9 @@ kamp voor iedereen een topervaring te maken.</p>
 
         <script src="vendor/slick-1.6.0/slick/slick.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
+        <script src="js/canvas-writer.js"></script>
+        <script src="js/digits.js"></script>
+        <script src="js/countdown.js"></script>
     </body>
 </html>
