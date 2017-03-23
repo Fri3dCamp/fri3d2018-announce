@@ -15,9 +15,9 @@ function updateClock() {
     var hours   = Math.floor( (timediff - 86400000*days)/3600000);
     var minutes = Math.floor( (timediff-86400000*days-3600000*hours)/60000 );
     var seconds = Math.floor( (timediff-86400000*days-3600000*hours-60000*minutes)/1000 );
-    
+
     updates = [];
-    
+
     var daysUpdate = ("000"+days).slice(-3);
     if(lastUpdate["days"] != daysUpdate) {
       updates.push(function() {
@@ -49,7 +49,7 @@ function updateClock() {
         lastUpdate["seconds"] = secondsUpdate;
       })
     }
-    
+
     processUpdates();
   }
 }
@@ -63,9 +63,9 @@ function processUpdates() {
 }
 
 window.addEventListener("load", function() {
-  writer = CanvasWriter.withLine(10)
+  writer = CanvasWriter.withLine(5)
                        .withScale(0.5)
                        .withSpace(30)
-                       .setSpeed(10);
+                       .setSpeed(2);
  updateClock();
 }, false);
