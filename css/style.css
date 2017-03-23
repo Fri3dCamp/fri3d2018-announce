@@ -537,6 +537,20 @@ strong {
 .countdown .val {
   font-family: 'Ubuntu Mono', sans-serif;
 }
+
+@media screen and (max-width: 800px) {
+  #countdown-days { width: 160px; }
+  #countdown-hours { width: 120px; }
+  #countdown-minutes { width: 120px; }
+  #countdown-seconds { width: 120px; }
+}
+@media screen and (max-width: 550px) {
+  #countdown-days { width: 100px; }
+  #countdown-hours { width: 75px; }
+  #countdown-minutes { width: 75px; }
+  #countdown-seconds { width: 75px; }
+}
+
 .maincontent {
   padding: 24px;
   max-width: 600px;
