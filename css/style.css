@@ -416,6 +416,11 @@ html {
     font-size: 5px;
   }
 }
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 4.5px;
+  }
+}
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -550,7 +555,12 @@ strong {
   #countdown-minutes { width: 75px; }
   #countdown-seconds { width: 75px; }
 }
-
+@media screen and (max-width: 320px) {
+  #countdown-days    { width: 80px; }
+  #countdown-hours   { width: 60px; }
+  #countdown-minutes { width: 60px; }
+  #countdown-seconds { width: 60px; }
+}
 .maincontent {
   padding: 24px;
   max-width: 600px;
