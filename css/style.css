@@ -416,9 +416,9 @@ html {
     font-size: 5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   html {
-    font-size: 4.5px;
+    font-size: 4px;
   }
 }
 h2 {
@@ -541,25 +541,6 @@ strong {
 }
 .countdown .val {
   font-family: 'Ubuntu Mono', sans-serif;
-}
-
-@media screen and (max-width: 800px) {
-  #countdown-days    { width: 160px; }
-  #countdown-hours   { width: 120px; }
-  #countdown-minutes { width: 120px; }
-  #countdown-seconds { width: 120px; }
-}
-@media screen and (max-width: 550px) {
-  #countdown-days    { width: 100px; }
-  #countdown-hours   { width: 75px; }
-  #countdown-minutes { width: 75px; }
-  #countdown-seconds { width: 75px; }
-}
-@media screen and (max-width: 320px) {
-  #countdown-days    { width: 80px; }
-  #countdown-hours   { width: 60px; }
-  #countdown-minutes { width: 60px; }
-  #countdown-seconds { width: 60px; }
 }
 .maincontent {
   padding: 24px;
