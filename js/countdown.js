@@ -18,10 +18,14 @@ function updateClock() {
 
     updates = [];
 
+    // if querystring equals "binary", show Daans binary font ;-)
+    var query = window.location.href.split("?");
+    var fontset = query.length == 2 && query[1] == "binary" ? binary :  font;
+
     var daysUpdate = ("000"+days).slice(-3);
     if(lastUpdate["days"] != daysUpdate) {
       updates.push(function() {
-        writer.useOutput("countdown-days").write(font, daysUpdate, processUpdates);
+        writer.useOutput("countdown-days").write(fontset, daysUpdate, processUpdates);
         lastUpdate["days"] = daysUpdate;
       })
     }
@@ -29,7 +33,7 @@ function updateClock() {
     var hoursUpdate = ("00"+hours).slice(-2);
     if(lastUpdate["hours"] != hoursUpdate) {
       updates.push(function() {
-        writer.useOutput("countdown-hours").write(font, hoursUpdate, processUpdates);
+        writer.useOutput("countdown-hours").write(fontset, hoursUpdate, processUpdates);
         lastUpdate["hours"] = hoursUpdate;
       })
     }
@@ -37,7 +41,7 @@ function updateClock() {
     var minutesUpdate = ("00"+minutes).slice(-2);
     if(lastUpdate["minutes"] != minutesUpdate) {
       updates.push(function() {
-        writer.useOutput("countdown-minutes").write(font, minutesUpdate, processUpdates);
+        writer.useOutput("countdown-minutes").write(fontset, minutesUpdate, processUpdates);
         lastUpdate["minutes"] = minutesUpdate;
       })
     }
@@ -45,7 +49,7 @@ function updateClock() {
     var secondsUpdate = ("00"+seconds).slice(-2);
     if(lastUpdate["seconds"] != secondsUpdate) {
       updates.push(function() {
-        writer.useOutput("countdown-seconds").write(font, secondsUpdate, processUpdates);
+        writer.useOutput("countdown-seconds").write(fontset, secondsUpdate, processUpdates);
         lastUpdate["seconds"] = secondsUpdate;
       })
     }
