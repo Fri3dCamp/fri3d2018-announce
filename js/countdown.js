@@ -18,10 +18,12 @@ function updateClock() {
 
     updates = [];
 
-    // if querystring equals "binary", show Daans binary font ;-)
-    var query = window.location.href.split("?");
-    var fontset = query.length == 2 && query[1] == "binary" ? binary :  font;
-
+    // if querystring equals a special, predefined set, use that
+    var fontset = {
+      "binary" : binary,
+      "roman"  : roman
+    }[window.location.href.split("?")[1]] || font;
+    
     var daysUpdate = ("000"+days).slice(-3);
     if(lastUpdate["days"] != daysUpdate) {
       updates.push(function() {
