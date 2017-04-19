@@ -2,7 +2,7 @@ $( document ).ready(function() {
     // slideshow
     $('.slideshow').slick({
       lazyLoad: 'ondemand',
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
       variableWidth: true,
       dots: false,
