@@ -96,15 +96,42 @@ strong {
 
 .widecontent {
   width:100%;
-  h2 {
+  h1,h2 {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+  h2 {
     font-size: 20px;
     font-weight: 300;
     max-width: 400px;
   }
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    max-width: 600px;
+    margin-top: (@margin*8);
+  }
+}
+
+.widecontent figure {
+  background-color: @clr-gray5;
+  padding:0;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.widecontent figcaption {
+  padding:(@margin*2);
+  background-color: @clr-gray4;
 }
 
 .pagefooter {
@@ -139,6 +166,10 @@ strong {
 
 .pagehead {
     background-color: @clr-primary1;
+    background-image: url('/img/header_forest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: (@margin*3);
 }
 
@@ -165,19 +196,19 @@ strong {
 .logo {
     position: relative;
     margin: @margin*3 auto @margin*10;
-    width: 300px;
-    height: 120px;
+    width: 400px;
+    height: 112px;
     @media screen and (max-width: @breakpoint1) {
         margin-bottom: @margin*6;
         margin-top: @margin*2;
-        width: 200px;
-        height: 80px;
+        width: 300px;
+        height: 84px;
     }
     @media screen and (max-width: @breakpoint2) {
         margin-bottom: @margin*5;
         margin-top: @margin;
-        width: 150px;
-        height: 60px;
+        width: 200px;
+        height: 56px;
     }
 }
 
@@ -221,6 +252,16 @@ strong {
     box-sizing: padding-box;
     line-height: 1.5em;
 }
+
+.maincontent figure {
+  margin:0;
+  padding:0;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 // BEGIN MAILCHIMP
 .mc-field-group {
     display: inline-block;
