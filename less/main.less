@@ -67,7 +67,7 @@ html {
 
 h2 {
     font-family: @fnt-headings;
-    font-size: 16px;
+    font-size: @fntsize-1;
     font-weight: 600;
     margin-top: (@margin*3);
     margin-bottom: @margin;
@@ -86,10 +86,10 @@ strong {
     font-weight: 600;
 }
 
-#landingpage {
+#landingpage, body.page {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: @fntsize-1;
     font-family: @fnt-body;
     color: @clr-gray1;
 }
@@ -103,14 +103,14 @@ strong {
     text-align: center;
   }
   h2 {
-    font-size: 20px;
+    font-size: @fntsize-2;
     font-weight: 300;
     max-width: 400px;
   }
   h1 {
-    font-size: 40px;
+    font-size: @fntsize-3;
     font-weight: 300;
-    max-width: 600px;
+    max-width: @rulelength;
     margin-top: (@margin*8);
   }
 }
@@ -174,11 +174,12 @@ strong {
 }
 
 .subhead {
-    background-color: @clr-gray5;
-    padding: @margin (@margin*3);
+    background-color: @clr-primary1;
+    //padding: @margin (@margin*3);
     font-family: @fnt-headings;
-    font-size: 3rem;
+    font-size: @fntsize-4;
     font-weight: 300;
+    border-top: 2px solid @clr-primary3;
 
     img {
         width: 4rem;
@@ -187,10 +188,49 @@ strong {
     }
 
     p {
-        max-width: 600px;
+        max-width: @rulelength;
         position: relative;
         margin: 2rem auto;
     }
+}
+
+.mainnav {
+    max-width: @rulelength-wide;
+    font-size: @fntsize-2;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.menu-container {
+  list-style: none;
+  padding:0;
+  margin:0;
+  display: flex;
+  li {
+    display: block;
+    flex-shrink: 2;
+    flex-grow: 2;
+    flex-basis: 50%;
+    list-style: none;
+    padding:0;
+    margin: 0;
+    &:last-of-type a {
+      border-right:1px solid @clr-primary3;
+    }
+  }
+  a {
+    display: block;
+    padding:1rem;
+    text-align: center;
+    color:white;
+    border-left:1px solid @clr-primary3;
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: @clr-primary3;
+      color:@clr-primary2;
+    }
+  }
 }
 
 .logo {
@@ -217,10 +257,37 @@ strong {
     height: 100%;
 }
 
+.maincontent {
+    padding: (@margin*3);
+    max-width: @rulelength;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: padding-box;
+    line-height: 1.5em;
+}
+
+
+.ttl-savethedate {
+    padding: @margin (@margin*3);
+    font-family: @fnt-headings;
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: @rulelength;
+    position: relative;
+    margin: 2rem auto;
+    img {
+        width: 4rem;
+        height: 4rem;
+        vertical-align: middle;
+    }
+}
+
+
 .countdown {
     display: flex;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: @rulelength-wide;
     margin-left: auto;
     margin-right: auto;
     .countdownnr {
@@ -243,15 +310,6 @@ strong {
     }
 }
 
-.maincontent {
-    padding: (@margin*3);
-    max-width: 600px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: padding-box;
-    line-height: 1.5em;
-}
 
 .maincontent figure {
   margin:0;
@@ -273,7 +331,7 @@ strong {
 #mc_embed_signup input[type="email"] {
     height: 40px;
     padding: 10px;
-    max-width: 300px;
+    max-width: (@rulelength/2);
     border: 1px solid @clr-gray3;
     vertical-align: top;
     box-sizing: border-box;
@@ -316,7 +374,7 @@ strong {
     a {
         font-family: @fnt-headings;
         font-weight: 300;
-        font-size: 20px;
+        font-size: @fntsize-2;
     }
 
     img {
