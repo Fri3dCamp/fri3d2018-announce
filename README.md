@@ -26,11 +26,11 @@ $ gem install jekyll bundler --user-install
 
 ## Gebruikte Tools
 
-[https://www.w3.org/TR/html5/](HTML5) -- We verwachten een relatief moderne browser
-[http://lesscss.org/](LESS) -- CSS pre-processor
-[http://gulpjs.com/](Gulp) -- Task runner   
-[https://www.npmjs.com/](NPM) -- Package manager  
-[http://jekyllrb.com/](Jekyll) -- Static site generator  
+* [https://www.w3.org/TR/html5/](HTML5) -- We verwachten een relatief moderne browser
+* [http://lesscss.org/](LESS) -- CSS pre-processor
+* [http://gulpjs.com/](Gulp) -- Task runner   
+* [https://www.npmjs.com/](NPM) -- Package manager  
+* [http://jekyllrb.com/](Jekyll) -- Static site generator  
 
 ## Meewerken aan de site...
 
