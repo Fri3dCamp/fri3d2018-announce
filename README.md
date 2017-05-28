@@ -44,7 +44,18 @@ $ cd fri3d2018-announce
 $ git checkout gh-pages
 $ npm install
 $ bundle update
+```
+
+Als je de ingebouwde server van jekyll wil gebruiken (en watchen voor changes):
+
+```
 $ bundle exec jekyll serve
+```
+
+Als je enkel de site will builden (en watchen voor changes):
+
+```
+$ bundle exec jekyll build --watch
 ```
 
 ## LESS
@@ -63,4 +74,10 @@ Wil je een niet-minified css genereren dan doe je
 
 ```bash
 $ gulp dev
+```
+
+Wil je `gulp dev` runnen telkens een .less file verandert, dan doe je
+
+```bash
+$ gulp stream
 ```
