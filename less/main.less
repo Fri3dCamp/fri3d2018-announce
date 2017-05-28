@@ -115,6 +115,30 @@ strong {
   }
 }
 
+.widecontent.multicol {
+  @media screen and (max-width: @breakpoint0) {
+    .col {
+      padding-left: (@margin*3);
+      padding-right: (@margin*3);
+    }
+  }
+  @media screen and (min-width: (@breakpoint0+1px)) {
+    display:flex;
+    max-width:1300px;
+    margin-left: auto;
+    margin-right: auto;
+    .col {
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding-left: (@margin*3);
+      max-width: 600px;
+      &:last-child {
+        padding-right: (@margin*3);
+      }
+    }
+  }
+}
+
 .widecontent figure {
   background-color: @clr-gray5;
   padding:0;
@@ -329,31 +353,8 @@ strong {
 }
 
 .slideshowwrapper {
-    padding: 10px 60px;
-    @media screen and (max-width:@breakpoint1) {
-        padding: 10px 30px;
-    }
+
     max-width: 100%;
-
-    img {
-        height: 600px;
-        @media screen and (max-width:@breakpoint1) {
-          height: 300px;
-        }
-        @media screen and (max-width:@breakpoint2) {
-          height: 200px;
-        }
-        width: auto;
-    }
-
-    div {
-        /*width: 100%;
-    height:600px;
-    background-color: @clr-black1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;*/
-    }
 
     .slick-slide {
         margin-right: 5px;
@@ -364,11 +365,80 @@ strong {
     .slick-prev:before {
         color: @clr-gray2;
     }
-
-    .slick-dots {
-        bottom: 0;
-    }
 }
+
+.slideshowwrapper-sfeer {
+  padding: 10px 60px;
+  @media screen and (max-width:@breakpoint1) {
+      padding: 10px 30px;
+  }
+}
+
+
+.slideshowwrapper-sfeer img {
+    height: 600px;
+    @media screen and (max-width:@breakpoint1) {
+      height: 300px;
+    }
+    @media screen and (max-width:@breakpoint2) {
+      height: 200px;
+    }
+    width: auto;
+}
+
+
+.slideshowwrapper-prospectie {
+  padding: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width:@breakpoint4) {
+    width: 200px;
+    .slideshow {
+      width: 200px;
+      height:133px;
+    }
+  }
+  @media screen and (min-width:@breakpoint3) {
+    width: 300px;
+    .slideshow {
+      width: 300px;
+      height:200px;
+    }
+  }
+  @media screen and (min-width:@breakpoint2) {
+    width: 400px;
+    .slideshow {
+      width: 400px;
+      height:266px;
+    }
+  }
+  @media screen and (min-width:@breakpoint1) {
+    width: 600px;
+    .slideshow {
+      width: 600px;
+      height:400px;
+    }
+  }
+}
+
+.slideshowwrapper-prospectie .slideshow img {
+  height:200px;
+  width: auto;
+  @media screen and (min-width:@breakpoint4) {
+    height: 133px;
+  }
+  @media screen and (min-width:@breakpoint3) {
+    height: 200px;
+  }
+  @media screen and (min-width:@breakpoint2) {
+    height: 266px;
+  }
+  @media screen and (min-width:@breakpoint1) {
+    height: 400px;
+  }
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
