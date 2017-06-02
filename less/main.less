@@ -332,6 +332,9 @@ strong {
   margin-bottom: (@margin*3);
 }
 
+.mailinglist_social {
+  text-align: center;
+}
 
 .ttl-savethedate {
     //padding: @margin (@margin*3);
@@ -458,7 +461,9 @@ strong {
     display: flex;
     padding: 0;
     margin: (@margin*4) 0 (@margin*6);
-
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
     a {
         font-family: @fnt-headings;
         font-weight: 300;
@@ -471,6 +476,8 @@ strong {
 
     li {
         margin-right: (@margin*4);
+        flex-grow: 1;
+        text-align: left;
     }
 }
 
@@ -480,7 +487,6 @@ strong {
         padding: 10px 30px;
     }
     max-width: 100%;
-
     img {
         height: 600px;
         @media screen and (max-width:@breakpoint1) {

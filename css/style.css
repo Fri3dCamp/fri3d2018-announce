@@ -676,6 +676,9 @@ body.page {
 .notice p:last-child {
   margin-bottom: 0;
 }
+.mailinglist_social {
+  text-align: center;
+}
 .ttl-savethedate {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
@@ -796,6 +799,9 @@ body.page {
   display: flex;
   padding: 0;
   margin: 32px 0 48px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .socialmedia a {
   font-family: 'Montserrat', sans-serif;
@@ -807,6 +813,8 @@ body.page {
 }
 .socialmedia li {
   margin-right: 32px;
+  flex-grow: 1;
+  text-align: left;
 }
 .slideshowwrapper {
   padding: 10px 60px;
@@ -849,6 +857,9 @@ body.page {
 }
 .slideshowwrapper .slick-dots {
   bottom: 0;
+}
+.slideshow {
+  opacity: 0;
 }
 /* ==========================================================================
    Media Queries
