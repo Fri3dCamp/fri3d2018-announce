@@ -24,3 +24,14 @@ $(window).scroll(function() {
     $('.subhead').removeClass("sticky");
   }
 });
+
+$(".menu-access a").click(function(e){
+  e.preventDefault();
+  $(this).toggleClass("menu-open");
+  $("#mainmenu").toggleClass("collapsed");
+  /*if ($(this).hasClass("menu-open")) {
+    $(this).children(".label").text("Menu verbergen");
+  } else {
+    $(this).children(".label").text("Menu tonen");
+  }*/
+});

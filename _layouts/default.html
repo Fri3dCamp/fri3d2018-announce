@@ -6,12 +6,15 @@
     </div>
     <div class="subhead">
         <div class="minibrand"><img src="/img/minibrand.svg" alt="Fri3d Camp"> 18-20 augustus 2018</div>
+        <div class="menu-access">
+          <a href="#mainmenu"><img src="/vendor/feather-icons/arrows/chevron-right.svg" width="24" height="24" alt=""> <span class="label">Navigatiemenu</span></a>
+        </div>
         <!-- .mainnav -->
-        <nav class="mainnav">
+        <nav class="mainnav collapsed" id="mainmenu">
           <ul class="menu-container">
-            <li><a href="/">Home</a></li>
-            <li><a href="/deelnemen/">Deelnemen</a></li>
-            <li><a href="/about/">Over Fri3d Camp</a></li>
+            <li {% if page.navitem == "home" %}class="selected"{% endif %}><a href="/">Home</a></li>
+            <li {% if page.navitem == "deelnemen" %}class="selected"{% endif %}><a href="/deelnemen/">Deelnemen</a></li>
+            <li {% if page.navitem == "about" %}class="selected"{% endif %}><a href="/about/">Over Fri3d Camp</a></li>
           </ul>
         </nav>
         <!-- /.mainnav -->
