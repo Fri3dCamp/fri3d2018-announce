@@ -517,6 +517,9 @@ body.page {
   padding: 16px;
   background-color: #AFAAA7;
 }
+.widecontent figcaption a {
+  color: #02454C;
+}
 .pagefooter {
   padding: 24px;
   color: #7F7671;
