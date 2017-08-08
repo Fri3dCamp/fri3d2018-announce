@@ -12,9 +12,16 @@
         <!-- .mainnav -->
         <nav class="mainnav collapsed" id="mainmenu">
           <ul class="menu-container">
-            <li {% if page.navitem == "home" %}class="selected"{% endif %}><a href="/">Home</a></li>
-            <li {% if page.navitem == "deelnemen" %}class="selected"{% endif %}><a href="/deelnemen/">Deelnemen</a></li>
-            <li {% if page.navitem == "about" %}class="selected"{% endif %}><a href="/about/">Over Fri3d Camp</a></li>
+            <li {% if page.navitem == "home" %}class="active"{% endif %}><a href="/">Home</a></li>
+            <li {% if page.navitem == "deelnemen" %}class="active"{% endif %}><a href="/deelnemen/">Deelnemen</a>
+                <ul class="menu-container">
+                    <li><a href="#">Jouw inhoud</a></li>
+                    <li><a href="#">Locatie & route</a></li>
+                    <li><a href="#">Plan je deelname</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </li>
+            <li {% if page.navitem == "about" %}class="active"{% endif %}><a href="/about/">Over Fri3d Camp</a></li>
           </ul>
         </nav>
         <!-- /.mainnav -->

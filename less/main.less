@@ -333,6 +333,37 @@ strong {
   }
 }*/
 
+.menu-container .menu-container {
+    position: absolute;
+    top:-9999px;
+    @media screen and (min-width:@breakpoint2) {
+        width: 100%;
+        left:0;
+    }
+    &.active {
+        top:auto;
+        @media screen and (max-width:(@breakpoint2 - 1px)) {
+            position: relative;
+        }
+    }
+    li {
+        display: block;
+        @media screen and (min-width:@breakpoint2) {
+            display:inline-block;
+        }
+        a {
+            font-size: @fntsize-1;
+            background-color: @clr-primary3;
+            color:@clr-primary2;
+            &:hover {
+                color: white;
+                background-color: @clr-primary2;
+            }
+        }
+    }
+
+}
+
 .menu-container {
   list-style: none;
   padding:0;
@@ -359,6 +390,12 @@ strong {
       background-color: @clr-primary3;
       color:@clr-primary2;
     }
+
+    &.active a {
+        background-color: white;
+        color:@clr-primary2;
+    }
+
   }
   a {
     display: block;

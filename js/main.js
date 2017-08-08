@@ -35,3 +35,9 @@ $(".menu-access a").click(function(e){
     $(this).children(".label").text("Menu tonen");
   }*/
 });
+
+$(".menu-container li").has( ".menu-container" ).children("a").click(function(e){
+    e.preventDefault();
+    $(this).parent().toggleClass('selected');
+    $(this).siblings(".menu-container").toggleClass('active');
+})
