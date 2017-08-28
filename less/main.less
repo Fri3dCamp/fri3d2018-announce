@@ -414,6 +414,19 @@ strong {
     line-height: 1.5em;
 }
 
+.herotext {
+    @media screen and (min-width: @breakpoint3) {
+        font-size: @fntsize-2;
+        margin-top: @margin*3;
+        margin-bottom: @margin*3;
+    }
+    font-weight: 100;
+    text-align: center;
+    p {
+        margin:0;
+    }
+}
+
 .subhead+.notice {
   margin-top: (@margin*3);
 }
@@ -449,8 +462,12 @@ strong {
     }
 }
 .countdownwrapper {
-  margin-bottom: (@margin*20);
-  margin-top: (@margin*10);
+      margin-bottom: (@margin*10);
+      margin-top: (@margin*5);
+      @media screen and (min-width: @breakpoint3) {
+          margin-bottom: (@margin*20);
+          margin-top: (@margin*10);
+      }
 }
   .cdfooter {
     margin-bottom:(@margin*2);
