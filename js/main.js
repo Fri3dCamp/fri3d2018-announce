@@ -1,22 +1,3 @@
-/*$( document ).ready(function() {
-    // slideshow
-    $('.slideshow').slick({
-      lazyLoad: 'ondemand',
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      variableWidth: true,
-      dots: false,
-      infinite: true,
-      speed: 1000,
-      initialSlide: 0,
-      fade: false,
-      cssEase: 'ease-in-out',
-      centerMode: true,
-      autoplay: true,
-      autoplaySpeed: 2000
-    })
-});*/
-
 $(document).ready(function(){
  // $(".owl-carousel").owlCarousel();
 
@@ -28,6 +9,7 @@ $(document).ready(function(){
     margin:10,
     stagePadding: 30,
     dots: false,
+    startPosition: 1,
     responsive:{
         600:{
             items:1,
@@ -36,14 +18,39 @@ $(document).ready(function(){
         }
     }
    });
-   $('.owl-item').click(function() {
-       if ($(this).next().hasClass('active')) {
-           $('.owl-carousel').trigger('prev.owl.carousel');
-       } else {
-           $('.owl-carousel').trigger('next.owl.carousel');
-       }
-   })
 
+   setTimeout(function () {
+       $('.owl-carousel').trigger('prev.owl.carousel');
+       set_owl_sizes();
+   }, 500);
+
+
+
+});
+
+$('.owl-item').click(function() {
+    if ($(this).next().hasClass('active')) {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+    } else {
+        $('.owl-carousel').trigger('next.owl.carousel');
+    }
+});
+
+function set_owl_sizes() {
+    $('.owl-carousel .active img').height('auto');
+    $('.owl-carousel .owl-item').each(function(){
+        $(this).children('img').height($(this).siblings('.active').height());
+    });
+}
+
+$('.owl-carousel').on('resized.owl.carousel', function( event ){
+     console.log('resized');
+     set_owl_sizes();
+});
+
+$('.owl-carousel').on('translated.owl.carousel', function( event ){
+     console.log('translated');
+     set_owl_sizes();
 });
 
 $(window).scroll(function() {
@@ -53,6 +60,7 @@ $(window).scroll(function() {
     $('.subhead').removeClass("sticky");
   }
 });
+
 
 $(".menu-access a").click(function(e){
   e.preventDefault();
