@@ -1,0 +1,26 @@
+- navitem: home
+  url: '/'
+  title: 'Home'
+- navitem: deelnemen
+  url: '/deelnemen/'
+  title: 'Deelnemen'
+  children:
+    - navitem: cfp
+      url: '/deelnemen/cfp.html'
+      title: 'Jouw Inhoud'
+      parent: deelnemen
+    - navitem: tickets
+      url: '/deelnemen/tickets.html'
+      title: 'Tickets'
+      parent: deelnemen
+    - navitem: locatie
+      url: '/deelnemen/locatie.html'
+      title: 'Locatie & route'
+      parent: deelnemen
+    - navitem: faq
+      url: '/deelnemen/faq.html'
+      title: 'FAQ'
+      parent: deelnemen
+- navitem: about
+  url: '/about/'
+  title: 'Over Fri3d Camp'
