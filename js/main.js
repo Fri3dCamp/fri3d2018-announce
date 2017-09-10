@@ -28,8 +28,9 @@ $(document).ready(function(){
 
 });
 
-$('.owl-item').click(function() {
-    if ($(this).next().hasClass('active')) {
+$('.owl-carousel img').click(function() {
+    console.log('click');
+    if ($(this).parent().next().hasClass('active')) {
         $('.owl-carousel').trigger('prev.owl.carousel');
     } else {
         $('.owl-carousel').trigger('next.owl.carousel');
@@ -61,6 +62,7 @@ $(window).scroll(function() {
   }
 });
 
+/* nav items */
 
 $(".menu-access a").click(function(e){
   e.preventDefault();
@@ -72,3 +74,46 @@ $(".menu-access a").click(function(e){
     $(this).children(".label").text("Menu tonen");
   }*/
 });
+
+var navtimers = [];
+
+function show_submenu( container ) {
+    console.log('show '+container);
+    clearTimeout(navtimers[container]);
+    $("#navitem-"+container).addClass('selected');
+    $("#submenu-"+container).addClass('active');
+}
+
+function hide_submenu( container, delay = 500 ) {
+    if ( delay > 0 ) {
+        console.log('hide '+container+' '+delay);
+        navtimers[container] = setTimeout( function() {
+            $("#submenu-"+container).removeClass('active');
+            $("#navitem-"+container).removeClass('selected');
+        }, delay );
+    } else {
+        console.log('hide '+container+' immediately');
+        for (navtimer in navtimers) {
+            clearTimeout(navtimer);
+        }
+        $("#submenu-"+container).removeClass('active');
+        $("#navitem-"+container).removeClass('selected');
+    }
+}
+
+$(".menu-container li").has( ".menu-container" ).children("a").hover(
+        function() {
+            show_submenu($(this).parent().data("navitem"));
+        },
+        function() {
+            hide_submenu($(this).parent().data("navitem"),200);
+        }
+);
+$(".menu-container .menu-container li").hover(
+        function() {
+            show_submenu($(this).parent().data("parent"));
+        },
+        function() {
+            hide_submenu($(this).parent().data("parent"),200);
+        }
+);

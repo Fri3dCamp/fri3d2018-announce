@@ -79,6 +79,9 @@ h2 {
 a {
     color: @clr-primary1;
     text-decoration: none;
+    &:hover {
+        color: @clr-primary2;
+    }
 }
 
 p {
@@ -100,6 +103,8 @@ strong {
 .maincontent p, .maincontent h2, .widecontent h2 {
   margin-bottom: (@margin*2);
 }
+
+
 
 .widecontent {
   width:100%;
@@ -212,7 +217,7 @@ strong {
 }
 
 .subhead {
-    background-color: @clr-primary1;
+    background-color: @clr-gray5;
     @media screen and (max-width:(@breakpoint2 - 1px)) {
       background-color: transparent;
     }
@@ -221,7 +226,7 @@ strong {
     font-size: @fntsize-4;
     font-weight: 300;
     @media screen and (min-width:@breakpoint2) {
-      border-top: 2px solid @clr-primary3;
+      border-top: 2px solid @clr-secondary1;
     }
     z-index: 80;
     &.sticky {
@@ -272,12 +277,29 @@ strong {
     }
 }
 
-.mainnav {
+.mainnav, .breadcrumb {
     max-width: @rulelength-wide;
-    font-size: @fntsize-2;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+}
+
+.breadcrumb {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @media screen and (max-width:@breakpoint0) {
+        max-width: @rulelength;
+    }
+    .material-icons {
+        vertical-align: bottom;
+        font-size: 18px;
+        margin-bottom: 2px;
+        color: @clr-gray2;
+    }
+}
+
+.mainnav {
+    font-size: @fntsize-2;
     transition: top 0.5s;
     top:0;
     z-index: 80;
@@ -333,6 +355,38 @@ strong {
   }
 }*/
 
+.menu-container .menu-container {
+    position: absolute;
+    top:-9999px;
+    @media screen and (min-width:@breakpoint2) {
+        width: 100%;
+        left:0;
+    }
+    &.active {
+        top:auto;
+        @media screen and (max-width:(@breakpoint2 - 1px)) {
+            position: relative;
+            display: none;
+        }
+    }
+    li {
+        display: block;
+        @media screen and (min-width:@breakpoint2) {
+            display:inline-block;
+        }
+        a {
+            font-size: @fntsize-1;
+            background-color: @clr-primary4;
+            color:@clr-primary1;
+            &:hover {
+                color: white;
+                background-color: @clr-primary1;
+            }
+        }
+    }
+
+}
+
 .menu-container {
   list-style: none;
   padding:0;
@@ -351,31 +405,43 @@ strong {
     margin: 0;
     &:last-of-type a {
       @media screen and (min-width:@breakpoint2) {
-        border-right:1px solid @clr-primary3;
+        border-right:1px solid white;
       }
     }
 
-    &.selected a {
-      background-color: @clr-primary3;
-      color:@clr-primary2;
+    &.selected > a, &.active.selected > a {
+      background-color: @clr-primary4;
+      color:@clr-primary1;
     }
+
+    &.active > a {
+        background-color: @clr-secondary1;
+        color:white;
+        &:hover {
+            background-color: @clr-primary4;
+            color:@clr-primary1;
+        }
+    }
+
   }
   a {
     display: block;
     padding:1rem;
     text-align: center;
-    color:white;
+    color:@clr-black1;
+    background-color:@clr-gray5;
     @media screen and (min-width:@breakpoint2) {
-      border-left:1px solid @clr-primary3;
+      border-left:1px solid white;
     }
     @media screen and (max-width:(@breakpoint2 - 1px)) {
-      border-top:1px solid @clr-primary3;
+      border-top:1px solid white;
     }
     transition: background-color 0.5s;
-    background-color:@clr-primary1;
     &:hover {
-      background-color: @clr-primary3;
-      color:@clr-primary2;
+        @media screen and (min-width:@breakpoint2) {
+            background-color: @clr-primary4;
+            color:@clr-primary1;
+        }
     }
   }
 }
@@ -406,12 +472,30 @@ strong {
 
 .maincontent, .notice {
     padding: (@margin*3);
+}
+
+
+
+.pagettl, .maincontent, .notice {
     max-width: @rulelength;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: padding-box;
     line-height: 1.5em;
+    box-sizing: padding-box;
+}
+
+.herotext {
+    @media screen and (min-width: @breakpoint3) {
+        font-size: @fntsize-2;
+        margin-top: @margin*3;
+        margin-bottom: @margin*3;
+    }
+    font-weight: 100;
+    text-align: center;
+    p {
+        margin:0;
+    }
 }
 
 .herotext {
@@ -439,6 +523,15 @@ strong {
     margin-bottom: 0;
   }
   margin-bottom: (@margin*3);
+}
+
+.button {
+    display: block;
+    background-color: @clr-primary1;
+    color:white;
+    padding:1rem;
+    text-align: center;
+    border-bottom: 2px solid @clr-primary2;
 }
 
 .mailinglist_social {
@@ -556,6 +649,7 @@ strong {
     background-color: @clr-primary1;
     vertical-align: top;
     box-sizing: border-box;
+    display: inline-block;
     @media screen and (max-width: @breakpoint3) {
         width: 100%;
         margin-top: @margin;
