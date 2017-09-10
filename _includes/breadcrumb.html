@@ -1,5 +1,5 @@
 {% if page.navlevel > 0 %}
-<nav class="breadcrumb"><i class="material-icons">home</i> <a href="/">Home</a> &gt;
+<nav class="breadcrumb"><i class="material-icons">home</i> <a href="{{ site.baseurl }}/">Home</a> &gt;
      {% for item in site.data.sitetree %}
         {% if item.navitem == page.navitem %}
             <a href="{{ item.url }}">{{ item.title }}</a> &gt;
