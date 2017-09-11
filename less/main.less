@@ -376,11 +376,11 @@ strong {
         }
         a {
             font-size: @fntsize-1;
-            background-color: @clr-primary4;
-            color:@clr-primary1;
+            background-color: @clr-secondary4;
+            color:@clr-black1;
             &:hover {
-                color: white;
-                background-color: @clr-primary1;
+                border-bottom: 0.2rem solid @clr-secondary1;
+                padding-bottom: 0.8rem;
             }
         }
     }
@@ -410,16 +410,17 @@ strong {
     }
 
     &.selected > a, &.active.selected > a {
-      background-color: @clr-primary4;
-      color:@clr-primary1;
+      background-color: @clr-secondary4;
+      color:@clr-black1;
     }
 
     &.active > a {
-        background-color: @clr-secondary1;
-        color:white;
+        border-top: solid 0.4rem @clr-secondary1;
+        padding-top: 0.6rem;
+        //color:white;
         &:hover {
-            background-color: @clr-primary4;
-            color:@clr-primary1;
+            background-color: @clr-secondary4;
+            color:@clr-black1;
         }
     }
 
@@ -436,11 +437,11 @@ strong {
     @media screen and (max-width:(@breakpoint2 - 1px)) {
       border-top:1px solid white;
     }
-    transition: background-color 0.5s;
+    transition: background-color 0.2s;
     &:hover {
         @media screen and (min-width:@breakpoint2) {
-            background-color: @clr-primary4;
-            color:@clr-primary1;
+            background-color: @clr-secondary4;
+            color:@clr-black1;
         }
     }
   }
@@ -748,13 +749,12 @@ strong {
         background: rgba(127,127,127, 1);
     }
 
-
-    /**
-    * @todo remove slick styles
-    **/
-
-
 }
+
+.printonly {
+    display: none;
+}
+
 
 /* ==========================================================================
    Media Queries
