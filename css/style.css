@@ -968,7 +968,8 @@ body.page {
 .notice p:last-child {
   margin-bottom: 0;
 }
-.button {
+.button,
+a.button {
   display: block;
   background-color: #0E96AF;
   color: white;
@@ -977,7 +978,8 @@ body.page {
   border-bottom: 0.2rem solid #025C6D;
   transition: background-color 0.2s;
 }
-.button:hover {
+.button:hover,
+a.button:hover {
   background-color: #025C6D;
 }
 .mailinglist_social {
