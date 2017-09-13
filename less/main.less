@@ -80,12 +80,18 @@ a {
     color: @clr-primary1;
     text-decoration: none;
     &:hover {
-        color: @clr-primary2;
+        color: @clr-primary5;
     }
 }
 
 p {
     margin-top: 0;
+}
+
+img.img-left {
+    float: left;
+    margin-right: @margin;
+    margin-bottom: @margin;
 }
 
 strong {
@@ -104,8 +110,6 @@ strong {
   margin-bottom: (@margin*2);
 }
 
-
-
 .widecontent {
   width:100%;
   h1,h2 {
@@ -117,13 +121,18 @@ strong {
   h2 {
     font-size: @fntsize-2;
     font-weight: 300;
-    max-width: 400px;
+    max-width: @rulelength;
   }
   h1 {
     font-size: @fntsize-3;
     font-weight: 300;
     max-width: @rulelength;
     margin-top: (@margin*8);
+  }
+  .slideshowwrapper {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
   }
 }
 
@@ -171,7 +180,7 @@ strong {
   padding:(@margin*2);
   background-color: @clr-gray4;
   a {
-      color:@clr-primary2;
+      color:@clr-primary5;
   }
 }
 
@@ -217,7 +226,7 @@ strong {
 }
 
 .subhead {
-    background-color: @clr-gray5;
+    background-color: @clr-primary1;
     @media screen and (max-width:(@breakpoint2 - 1px)) {
       background-color: transparent;
     }
@@ -226,7 +235,7 @@ strong {
     font-size: @fntsize-4;
     font-weight: 300;
     @media screen and (min-width:@breakpoint2) {
-      border-top: 2px solid @clr-secondary1;
+      border-top: 0.2rem solid @clr-primary6;
     }
     z-index: 80;
     &.sticky {
@@ -234,7 +243,7 @@ strong {
       @media screen and (min-width:@breakpoint2) {
         box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.3);
       }
-      border-top-color: @clr-primary2;
+      border-top-color: @clr-primary5;
       position: fixed;
       top:0;
       left:0;
@@ -266,7 +275,7 @@ strong {
       font-size: 12px;
       text-align: center;
       color:white;
-      background-color: @clr-primary2;
+      background-color: @clr-primary5;
       vertical-align: middle;
       transition: height 0.5s, padding 0.5s;
       img {
@@ -316,7 +325,7 @@ strong {
   padding-top: @margin;
   padding-bottom: @margin;
   background-color: @clr-primary1;
-  border-top: 2px solid @clr-primary3;
+  border-top: 2px solid @clr-primary2;
   z-index:200;
   position: relative;
   a {
@@ -376,11 +385,10 @@ strong {
         }
         a {
             font-size: @fntsize-1;
-            background-color: @clr-secondary4;
+            background-color: @clr-primary7;
             color:@clr-black1;
             &:hover {
-                border-bottom: 0.2rem solid @clr-secondary1;
-                padding-bottom: 0.8rem;
+                background-color: @clr-primary6;
             }
         }
     }
@@ -405,21 +413,21 @@ strong {
     margin: 0;
     &:last-of-type a {
       @media screen and (min-width:@breakpoint2) {
-        border-right:1px solid white;
+        border-right:1px solid @clr-primary2;
       }
     }
 
     &.selected > a, &.active.selected > a {
-      background-color: @clr-secondary4;
-      color:@clr-black1;
+        background-color: @clr-primary7;
+        color:@clr-black1;
     }
 
     &.active > a {
-        border-top: solid 0.4rem @clr-secondary1;
-        padding-top: 0.6rem;
+        background-color: @clr-primary6;
+        color:@clr-primary5;
         //color:white;
         &:hover {
-            background-color: @clr-secondary4;
+            background-color: @clr-primary7;
             color:@clr-black1;
         }
     }
@@ -429,18 +437,18 @@ strong {
     display: block;
     padding:1rem;
     text-align: center;
-    color:@clr-black1;
-    background-color:@clr-gray5;
+    color:white;
+    background-color:@clr-primary1;
     @media screen and (min-width:@breakpoint2) {
-      border-left:1px solid white;
+      border-left:1px solid @clr-primary2;
     }
     @media screen and (max-width:(@breakpoint2 - 1px)) {
-      border-top:1px solid white;
+      border-top:1px solid @clr-primary2;
     }
     transition: background-color 0.2s;
     &:hover {
         @media screen and (min-width:@breakpoint2) {
-            background-color: @clr-secondary4;
+            background-color: @clr-primary6;
             color:@clr-black1;
         }
     }
@@ -471,11 +479,9 @@ strong {
     height: 100%;
 }
 
-.maincontent, .notice {
+.maincontent, .notice, .cta {
     padding: (@margin*3);
 }
-
-
 
 .pagettl, .maincontent, .notice {
     max-width: @rulelength;
@@ -486,6 +492,60 @@ strong {
     box-sizing: padding-box;
 }
 
+.cta {
+    max-width: @rulelength;
+    .heroimg {
+        width: 100%;
+        margin-bottom: @margin;
+        height: auto;
+    }
+    .herottl {
+        font-family: @fnt-headings;
+        color: white;
+        font-size: 3rem;
+        background-size: cover;
+        background-color: @clr-primary1;
+    }
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta .linkbar {
+    background-color: @clr-gray5;
+    display: flex;
+    .primary {
+        padding: (@margin*2);
+        display: block;
+        background-color:@clr-primary1;
+        color:white;
+        flex-grow: 1;
+        border-bottom: 0.4rem solid @clr-primary5;
+        padding-bottom: (@margin*2 - 0.4rem);
+        transition: background-color 0.2s;
+        font-weight: 700;
+        &:hover {
+            background-color: @clr-primary5;
+        }
+    }
+    .secondary {
+        padding: (@margin*2);
+        text-align: right;
+        flex-grow: 5;
+    }
+}
+
+#cta-cfp .herottl {
+    background-image: url('../img/workshop.jpg');
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: (@margin*3);
+    padding-left: 100px;
+    padding-right: 160px;
+    background-size: cover;
+    line-height: 1.2;
+}
+
 .herotext {
     @media screen and (min-width: @breakpoint3) {
         font-size: @fntsize-2;
@@ -499,16 +559,24 @@ strong {
     }
 }
 
-.herotext {
-    @media screen and (min-width: @breakpoint3) {
-        font-size: @fntsize-2;
-        margin-top: @margin*3;
-        margin-bottom: @margin*3;
+.navpage > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: block;
     }
-    font-weight: 100;
-    text-align: center;
-    p {
-        margin:0;
+    a {
+        transition: background-color 0.2s, color 0.2s;
+        display: block;
+        background-color: @clr-primary6;
+        color:@clr-primary5;
+        padding:1rem;
+        margin-bottom: 1rem;
+        &:hover {
+            background-color: @clr-primary1;
+            color:white;
+        }
     }
 }
 
@@ -517,7 +585,8 @@ strong {
 }
 
 .notice {
-  background-color:@clr-secondary4;
+  //background-color:@clr-secondary7;
+  background-color: @clr-tertiary7;
   //padding-top:(@margin*2);
   margin-top:(@margin*1);
   p:last-child {
@@ -532,7 +601,11 @@ strong {
     color:white;
     padding:1rem;
     text-align: center;
-    border-bottom: 2px solid @clr-primary2;
+    border-bottom: 0.2rem solid @clr-primary5;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: @clr-primary5;
+    }
 }
 
 .mailinglist_social {
@@ -576,7 +649,7 @@ strong {
     max-width: @rulelength-wide;
     margin-left: auto;
     margin-right: auto;
-    //background-color: @clr-primary4;
+    //background-color: @clr-primary2;
     .cdsection {
       flex-grow: 1;
       flex-shrink: 1;
@@ -645,15 +718,19 @@ strong {
     font-family: @fnt-headings;
     font-weight: 300;
     border: none;
-    border-bottom: 4px solid @clr-primary2;
+    border-bottom: 4px solid @clr-primary5;
     color: white;
     background-color: @clr-primary1;
     vertical-align: top;
     box-sizing: border-box;
     display: inline-block;
+    transition: background-color 0.2s;
     @media screen and (max-width: @breakpoint3) {
         width: 100%;
         margin-top: @margin;
+    }
+    &:hover {
+        background-color: @clr-primary5;
     }
 }
 
