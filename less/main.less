@@ -75,6 +75,14 @@ h2 {
       margin-top: 0;
     }
 }
+h1 {
+    font-family: @fnt-headings;
+    font-size: 40px;
+    @media screen and (max-width: @breakpoint2) {
+        font-size: 30px;
+    }
+    font-weight: 600;
+}
 
 a {
     color: @clr-primary1;
@@ -124,7 +132,7 @@ strong {
     max-width: @rulelength;
   }
   h1 {
-    font-size: @fntsize-3;
+    font-size: 30px;
     font-weight: 300;
     max-width: @rulelength;
     margin-top: (@margin*8);
@@ -298,6 +306,10 @@ strong {
     padding-bottom: 2rem;
     @media screen and (max-width:@breakpoint0) {
         max-width: @rulelength;
+    }
+    @media screen and (max-width: @breakpoint2) {
+        margin-left: (@margin*2);
+        margin-right: (@margin*2);
     }
     .material-icons {
         vertical-align: bottom;
@@ -490,6 +502,10 @@ strong {
     margin-right: auto;
     line-height: 1.5em;
     box-sizing: padding-box;
+    @media screen and (max-width: @breakpoint2) {
+        margin-left: (@margin*2);
+        margin-right: (@margin*2);
+    }
 }
 
 .cta {
@@ -544,6 +560,10 @@ strong {
     padding-right: 160px;
     background-size: cover;
     line-height: 1.2;
+    @media screen and (max-width: @breakpoint2) {
+        padding-right: (@margin*3);
+        padding-left: (@margin*3);
+    }
 }
 
 .herotext {

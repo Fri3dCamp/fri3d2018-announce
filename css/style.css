@@ -442,6 +442,16 @@ h2 {
 h2:first-child {
   margin-top: 0;
 }
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 a {
   color: #0E96AF;
   text-decoration: none;
@@ -489,7 +499,7 @@ body.page {
   max-width: 600px;
 }
 .widecontent h1 {
-  font-size: 4rem;
+  font-size: 30px;
   font-weight: 300;
   max-width: 600px;
   margin-top: 64px;
@@ -663,6 +673,12 @@ body.page {
 @media screen and (max-width: 1024px) {
   .breadcrumb {
     max-width: 600px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .breadcrumb {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 .breadcrumb .material-icons {
@@ -872,6 +888,14 @@ body.page {
   line-height: 1.5em;
   box-sizing: padding-box;
 }
+@media screen and (max-width: 550px) {
+  .pagettl,
+  .maincontent,
+  .notice {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
 .cta {
   max-width: 600px;
   margin-left: auto;
@@ -922,6 +946,12 @@ body.page {
   padding-right: 160px;
   background-size: cover;
   line-height: 1.2;
+}
+@media screen and (max-width: 550px) {
+  #cta-cfp .herottl {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 .herotext {
   font-weight: 100;
