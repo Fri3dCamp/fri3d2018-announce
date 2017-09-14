@@ -554,6 +554,10 @@ body.page {
 .widecontent figcaption a {
   color: #025C6D;
 }
+.layout-redirecter .pagefooter {
+  background-color: #EDEDED;
+  color: #332F2D;
+}
 .pagefooter {
   padding: 24px;
   color: #7F7671;
