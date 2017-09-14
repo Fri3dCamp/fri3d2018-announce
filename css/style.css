@@ -595,6 +595,32 @@ body.page {
   z-index: 100;
   position: relative;
 }
+.layout-redirecter .pagehead {
+  padding: 8px;
+}
+.layout-redirecter .pagehead .logo {
+  width: 220px;
+  height: 60px;
+  margin: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 800px) {
+  .layout-redirecter .pagehead .logo {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 220px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .layout-redirecter .pagehead .logo {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 220px;
+    height: 60px;
+  }
+}
 .subhead {
   background-color: #0E96AF;
   font-family: 'Montserrat', sans-serif;
@@ -987,7 +1013,8 @@ body.page {
   background-color: #0E96AF;
   color: white;
 }
-.subhead + .notice {
+.subhead + .notice,
+.pagehead + .notice {
   margin-top: 24px;
 }
 .notice {
