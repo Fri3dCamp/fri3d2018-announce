@@ -1,0 +1,9 @@
+<li id="navitem-{{ item.navitem}}" data-navitem="{{ item.navitem}}"{% if page.navitem == item.navitem %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+    {% if item.children %}
+    <ul id="submenu-{{ item.navitem}}" class="menu-container" data-parent="{{ item.navitem}}">
+        {% for child in item.children %}
+        <li><a href="{{ site.baseurl }}{{ child.url }}">{{ child.title }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>
