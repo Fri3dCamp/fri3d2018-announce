@@ -1,0 +1,71 @@
+.fri3d-slideshowwrapper {
+    //background-color: pink;
+    max-width: @rulelength-wide;
+    margin-left: auto;
+    margin-right: auto;
+    .images, .nav-dots {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 0;
+            margin:0;
+        }
+    }
+    .images {
+        position: relative;
+        height:400px;
+        @media screen and (max-width: @breakpoint1) {
+            height: 266px;
+        }
+        @media screen and (max-width: @breakpoint2) {
+            height: 173px;
+        }
+        overflow: hidden;
+        //transition: left 0.5s;
+    }
+    .images li {
+        float:left;
+        width:600px;
+        height: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+        @media screen and (max-width: @breakpoint1) {
+            width:400px;
+            height: 266px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        @media screen and (max-width: @breakpoint2) {
+            width:260px;
+            height: 173px;
+        }
+        position: relative;
+        background-color: @clr-gray4;        
+    }
+    .images img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: block;
+        left: 0;
+        top: 0;
+    }
+    .images li span {
+        display: block;
+        padding:5px;
+        background-color: black;
+        color: white;
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+    .images li.nextitem, .images li.previtem {
+        cursor: pointer;
+    }
+}
+
+.fri3d-slideshow {
+    overflow: hidden;
+}
