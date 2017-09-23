@@ -37,6 +37,7 @@ $(document).ready(function(){
         set_totalwidth( elem );
         set_srcs( elem, focusnr );
         set_leftpos ( elem, focusnr );
+        imageslist.css('opacity',1);
     }
 
     function set_leftpos ( elem, focusnr = 1 ) {
