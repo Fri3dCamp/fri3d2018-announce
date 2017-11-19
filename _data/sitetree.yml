@@ -7,7 +7,7 @@
   children:
     - navitem: cfp
       url: 'https://content.fri3d.be/cfp'
-      title: 'Jouw Inhoud'
+      title: 'Jouw Voorstel'
       parent: deelnemen
     - navitem: tickets
       url: '/deelnemen/tickets.html'
