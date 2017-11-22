@@ -21,6 +21,11 @@
       url: '/deelnemen/faq.html'
       title: 'FAQ'
       parent: deelnemen
+    - navitem: logo-contest
+      url: '/deelnemen/logo-contest.html'
+      title: 'Make the logo bigger'
+      parent: deelnemen
+      menu: false
 - navitem: about
   url: '/about/'
   title: 'Over Fri3d Camp'

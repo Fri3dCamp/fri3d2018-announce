@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 566.9 283.5" style="enable-background:new 0 0 566.9 283.5;" xml:space="preserve">
+<style type="text/css">
+	.st1{font-family:'Courier';}
+	.st2{font-size:15px;}
+	.st3{fill:none;stroke:#000000;stroke-width:0.6;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1">
+	<g>
+		<path d="M105.4,122.9l67.3,67.3L136.1,117l3.6-1.5l38.5,77l38.5-77l3.6,1.5l-36.6,73.2l67.3-67.3l-72.8-30L105.4,122.9z
+			 M178.2,88.7l70.8-29.2l-21.4,42.9l-3.6-1.5l16.9-33.8l-57.6,23.7l74.6,30.7l-79.7,79.7v0l-79.7-79.7l74.6-30.7l-57.6-23.7
+			l16.9,33.7l-3.6,1.5l-21.4-42.8L178.2,88.7z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 155.7187 240.3946)" class="st1 st2">Shape</text>
+	<text transform="matrix(1 0 0 1 371.0976 240.3946)" class="st1 st2">Line</text>
+</g>
+<g id="Layer_2">
+	<g>
+		<polyline class="st3" points="348.7,116.3 389.4,198.2 465.6,122.3 322.3,63.2 341.5,101.8 		"/>
+		<polyline class="st3" points="436.8,101.7 455.9,63.3 312.6,122.4 388.8,198.3 429.5,116.2 		"/>
+	</g>
+</g>
+</svg>
