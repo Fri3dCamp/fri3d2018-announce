@@ -2,7 +2,9 @@
     {% if item.children %}
     <ul id="submenu-{{ item.navitem}}" class="menu-container" data-parent="{{ item.navitem}}">
         {% for child in item.children %}
+            {% if child.menu != false %}
         <li><a href="{{ site.baseurl }}{{ child.url }}">{{ child.title }}</a></li>
+            {% endif %}
         {% endfor %}
     </ul>
     {% endif %}

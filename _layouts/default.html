@@ -9,7 +9,9 @@
         <nav class="mainnav collapsed" id="mainmenu">
           <ul class="menu-container">
             {% for item in site.data.sitetree %}
-                {% include navitem.html %}
+                {% if item.menu != false %}
+                    {% include navitem.html %}
+                {% endif %}
             {% endfor %}
         </ul>
         </nav>
