@@ -15,6 +15,12 @@ $(document).ready(function(){
     function slideshow_init( elem, focusnr = 1 ) {
         var viewportwidth = $( elem ).width();
         var imageslist = $( elem ).find( ".images" );
+        var ratio = $( elem ).find(".images").data("hratio");
+        if (!ratio) {
+            ratio = 0.667;
+        }
+        var imgwidth = $( elem ).find(".images li").first().width();
+        var imgheight = imgwidth * ratio;
         var total = $( elem ).find(".images li").not(".clone").length;
         if (focusnr > total) {
             focusnr = focusnr % total;
@@ -29,6 +35,8 @@ $(document).ready(function(){
         imageslist.data('leftpos',leftpos);
         imageslist.data('focusnr',focusnr);
         imageslist.children().remove( ".clone" );
+        $( elem ).find(".images").height( imgheight );
+        $( elem ).find(".images li").height( imgheight );
         $( elem ).find(".images li[data-volgnr=1]").clone(true).appendTo( imageslist ).addClass( "clone" );
         $( elem ).find(".images li[data-volgnr=2]").clone(true).appendTo( imageslist ).addClass( "clone" );
         $( elem ).find(".images li[data-volgnr="+total+"]").clone(true).prependTo( imageslist ).addClass( "clone" );

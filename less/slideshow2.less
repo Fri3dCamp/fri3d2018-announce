@@ -1,8 +1,8 @@
 .fri3d-slideshowwrapper {
-    //background-color: pink;
     max-width: @rulelength-wide;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: (@margin*3);
     .images, .nav-dots {
         list-style: none;
         padding: 0;
@@ -14,13 +14,6 @@
     }
     .images {
         position: relative;
-        height:400px;
-        @media screen and (max-width: @breakpoint1) {
-            height: 266px;
-        }
-        @media screen and (max-width: @breakpoint2) {
-            height: 173px;
-        }
         overflow: hidden;
         opacity: 0;
         transition: opacity 0.5s;
@@ -28,21 +21,19 @@
     .images li {
         float:left;
         width:600px;
-        height: 400px;
         margin-left: 20px;
         margin-right: 20px;
         @media screen and (max-width: @breakpoint1) {
             width:400px;
-            height: 266px;
             margin-left: 10px;
             margin-right: 10px;
         }
         @media screen and (max-width: @breakpoint2) {
             width:260px;
-            height: 173px;
         }
         position: relative;
         background-color: @clr-gray4;
+        background-size: cover;
     }
     .images img {
         position: absolute;
@@ -67,7 +58,7 @@
     }
     .slideshow-nav {
         text-align: center;
-        margin-top: @margin*3;        
+        margin-top: @margin*3;
         @media screen and (max-width: @breakpoint2) {
             display: none;
         }
