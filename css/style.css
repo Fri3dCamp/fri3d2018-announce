@@ -478,6 +478,9 @@ body.page {
   font-family: 'Open Sans', sans-serif;
   color: #332F2D;
 }
+.material-icons {
+  vertical-align: bottom;
+}
 .maincontent p,
 .maincontent h2,
 .widecontent h2 {
@@ -1186,13 +1189,33 @@ a.button:hover {
   font-weight: 300;
   font-size: 20px;
 }
+@media screen and (max-width: 550px) {
+  .socialmedia a {
+    font-size: 16px;
+  }
+}
 .socialmedia img {
   margin-right: 8px;
+  height: 50px;
+  width: auto;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 550px) {
+  .socialmedia img {
+    height: 24px;
+  }
 }
 .socialmedia li {
-  margin-right: 32px;
+  margin-right: 8px;
+  margin-left: 8px;
   flex-grow: 1;
-  text-align: left;
+  text-align: center;
+}
+.socialmedia li:first-of-type {
+  margin-left: 0;
+}
+.socialmedia li:last-of-type {
+  margin-right: 0;
 }
 .slideshowwrapper {
   padding: 10px 60px;
@@ -1335,6 +1358,36 @@ a.button:hover {
 }
 .printonly {
   display: none;
+}
+.linkblock {
+  display: block;
+  width: 100px;
+  min-height: 50px;
+  margin: 32px;
+  margin-top: 0;
+  background-color: #EDEDED;
+  padding: 8px;
+}
+@media screen and (max-width: 400px) {
+  .linkblock {
+    width: 60px;
+  }
+}
+.linkblock img,
+.linkblock .label {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+.linkblock .label {
+  text-align: center;
+}
+.linkblock-right {
+  float: right;
+  margin-right: 0;
 }
 /* ==========================================================================
    Media Queries
