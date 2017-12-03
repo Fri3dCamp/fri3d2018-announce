@@ -5,10 +5,6 @@
   url: '/deelnemen/'
   title: 'Deelnemen'
   children:
-    - navitem: cfp
-      url: 'https://content.fri3d.be/cfp'
-      title: 'Jouw Voorstel'
-      parent: deelnemen
     - navitem: tickets
       url: '/deelnemen/tickets.html'
       title: 'Tickets'
@@ -23,9 +19,13 @@
       parent: deelnemen
     - navitem: logo-contest
       url: '/deelnemen/logo-contest.html'
-      title: 'Make the logo bigger'
+      title: 'Make&nbsp;the&nbsp;logo&nbsp;bigger'
       parent: deelnemen
-      menu: false
+      #menu: false
 - navitem: about
   url: '/about/'
   title: 'Over Fri3d Camp'
+- navitem: cfp
+  url: 'https://content.fri3d.be/cfp'
+  title: 'Jouw Voorstel'
+  parent: deelnemen
