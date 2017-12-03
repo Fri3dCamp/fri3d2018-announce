@@ -969,8 +969,7 @@ body.page {
   text-align: right;
   flex-grow: 5;
 }
-#cta-cfp .herottl {
-  background-image: url('../img/workshop.jpg');
+.cta .herottl {
   color: white;
   font-size: 4rem;
   font-weight: 600;
@@ -981,10 +980,17 @@ body.page {
   line-height: 1.2;
 }
 @media screen and (max-width: 550px) {
-  #cta-cfp .herottl {
+  .cta .herottl {
     padding-right: 24px;
     padding-left: 24px;
   }
+}
+#cta-cfp .herottl {
+  background-image: url('../img/workshop_bg.jpg');
+}
+#cta-contest .herottl {
+  background-image: url('../img/logo_in_auto_bg.jpg');
+  background-position: center -40px;
 }
 .herotext {
   font-weight: 100;
