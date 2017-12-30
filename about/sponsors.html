@@ -1,0 +1,37 @@
+---
+layout: default
+title: Sponsors
+navitem: about
+navlevel: 1
+sponsors:
+    - name: 'Espressif'
+      img: espressif.png
+    - name: 'Novid'
+      img: novid.png
+    - name: 'Dekimo'
+      img: dekimo.png
+    - name: 'De Werkkamer'
+      img: dewerkkamer.png
+    - name: 'Euro Circuits'
+      img: eurocircuits.png
+    - name: 'Fablab Factory'
+      img: fablabfactory.png
+    - name: 'Wireless Belgium'
+      img: wireless-belgium.png
+---
+    <div class="maincontent">
+      <h2>Bedankt aan deze bedrijven en organisaties!</h2>
+      <p>Zonder sponsors zou Fri3d Camp amper kunnen bestaan. De ticketprijs zou veel hoger liggen, en er zouden een pak minder coole dingen te beleven zijn.<p>
+      <h2>Partners en sponsors</h2>
+      <p>Fri3d Camp zoekt partners en sponsors die een meerwaarde kunnen bieden aan het kamp en onze visie en waarden delen. We bieden een enthousiast publiek dat graag creatief aan de slag gaat met technologie, en niet bang is voor onbekend terrein.</p>
+      <p>We zetten onze sponsors hier dan ook graag even in het zonnetje:</p>
+    </div>
+    <div class="imggrid">
+        {% for item in page.sponsors %}
+            {% include sponsor.html %}
+        {% endfor %}
+    </div>
+    <div class="notice notice-info">
+      <h2>Ben jij een mogelijke partner?</h2>
+      <p>Dan horen we heel graag van je! Voor een meer uitgebreide presentatie van Fri3d Camp met nog meer facts &amp; figures, neem contact op met <a href="mailto:info@fri3d.be">info@fri3d.be</a></p>
+    </div>

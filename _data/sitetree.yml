@@ -25,6 +25,19 @@
 - navitem: about
   url: '/about/'
   title: 'Over Fri3d Camp'
+  children:
+    - navitem: Sponsors
+      url: '/about/sponsors.html'
+      title: 'Sponsors'
+      parent: about
+    - navitem: Thema Robots
+      url: '/about/thema.html'
+      title: 'Thema Robots'
+      parent: about
+    - navitem: Wat is Fri3d Camp?
+      url: '/about/wat.html'
+      title: 'Wat is Fri3d Camp?'
+      parent: about
 - navitem: cfp
   url: 'https://content.fri3d.be/cfp'
   title: 'Jouw Voorstel'
