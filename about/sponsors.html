@@ -6,32 +6,76 @@ navlevel: 1
 sponsors:
     - name: 'Espressif'
       img: espressif.png
-    - name: 'Novid'
-      img: novid.png
+      info: Espressif Systems is a world-leading Internet-of-Things company. The company designs a range of high-performance Wi-Fi+Bluetooth (BLE) chipsets and modules. It built the widely popular ESP8266 and ESP32 chips. It also has an innovative team of chip-design specialists, software/firmware developers and marketers. Espressif Systems is committed to providing the best IoT devices and software platforms in the industry.
+      sponsorship: Espressif sponsort alle ESP32 modules voor de Fri3d Camp badge.
     - name: 'Dekimo'
-      img: dekimo.png
+      img: dekimo.jpg
+      info: Dekimo is a leading independent electronic services supplier in the Benelux. Customer satisfaction is our most important achievement. Dekimo delivers development services as well as a production facilities. Development of electronics &amp; software, consultancy &amp; flexible staffing in electronics &amp; software, PCB design/layout and EMC measurements, series production and assembly of PCBAs and mechatronics solutions.
+      sponsorship: Dekimo zorgt voor de assemblage van de Fri3d Camp badge.
+    - name: 'EuroCircuits'
+      img: eurocircuits.png
+      info: Eurocircuits are specialist manufacturers of prototype and small batch PCBs. We are dedicated to providing a PCB service that will help PCB designers bring their projects to market on time and on budget.
+      sponsorship: EuroCircuits maakt de PCBs voor dr Fri3d Camp badge.
+    - name: 'Wireless België'
+      img: wireless-belgium.png
+      info: Wat meer dan 10 jaar geleden begon als een lokaal project van enkele enthousiastelingen uit het Antwerpse is uitgegroeid tot een nationaal netwerk met meer dan 600 wijd verspreide toegangspunten.
+      sponsorship: Wireless België zorgt er voor dat alle deelnemers op Fri3d Camp kunnen genieten van een schitterend draadloos netwerk.
     - name: 'De Werkkamer'
       img: dewerkkamer.png
-    - name: 'Euro Circuits'
-      img: eurocircuits.png
-    - name: 'Fablab Factory'
-      img: fablabfactory.png
-    - name: 'Wireless Belgium'
-      img: wireless-belgium.png
+      info: De Werkkamer restaureert en herstelt meubelen, schilderijen en objecten. Daarnaast maakt De Werkkamer meubelen via 2- en 3 D CNC freestechnieken, complementair aan maar ook geïntegreerd in de restauratieactiviteiten. Opgericht in 1999 als restauratieatelier breidde De Werkkamer haar activiteiten uit met het uitvoeren van speciale projecten en de combinatie van restauratie en renovatieprojecten zowel in privé als in openbare context.
+      sponsorship: Net zoals tijdens de tweede editie, zorgt De Werkkamer opnieuw voor prachtige gefreesde bewegwijzering, zodat niemand de weg kwijt geraak op Fri3d Camp.
+    - name: 'Novid'
+      img: novid.png
+      info: Novid is gespecialiseerd in de verhuur van audiovisueel materiaal. Samen met onze klanten én de klanten van onze klanten creëren we de beste, meest authentieke totaalervaringen. En dit via kwalitatieve audiovisuele technologie en gepaste dienstverlening.
+      sponsorship: Al drie edities lang stelt Novid hun audiovisueel materiaal ter beschikking van Fri3d Camp.
 ---
     <div class="maincontent">
-      <h2>Bedankt aan deze bedrijven en organisaties!</h2>
-      <p>Zonder sponsors zou Fri3d Camp amper kunnen bestaan. De ticketprijs zou veel hoger liggen, en er zouden een pak minder coole dingen te beleven zijn.<p>
-      <h2>Partners en sponsors</h2>
-      <p>Fri3d Camp zoekt partners en sponsors die een meerwaarde kunnen bieden aan het kamp en onze visie en waarden delen. We bieden een enthousiast publiek dat graag creatief aan de slag gaat met technologie, en niet bang is voor onbekend terrein.</p>
+
+      <p>
+        Een evenement zoals Fri3d Camp vraagt naast heel wat voorbereiding en
+        de inzet van vrijwilligers &amp; deelnemers, ook een aardig budget om
+        iedereen gedurende drie dagen in de beste omstandigheden te ontvangen.
+      </p>
+
+      <h2>Dank u, beste sponsors!</h2>
+
+      <p>
+        Zonder sponsors zou Fri3d Camp amper kunnen bestaan. De ticketprijs zou
+        veel hoger liggen, en er zouden een pak minder coole dingen te beleven
+        zijn.
+      <p>
+
+      <p>
+        Fri3d Camp zoekt in eerste plaats partners die een meerwaarde kunnen
+        bieden aan het kamp, onze visie en waarden delen en waar de bijdrage in
+        eerste plaats binnen hun operationele mogelijkheden liggen. Slechts in
+        een tweede fase zouden we kijken naar pure financi&euml;le sponsoring.
+      </p>
+
+      <p>
+        We bieden een enthousiast publiek dat graag creatief aan de slag gaat
+        met technologie, en niet bang is voor onbekend terrein.
+      </p>
+
       <p>We zetten onze sponsors hier dan ook graag even in het zonnetje:</p>
-    </div>
-    <div class="imggrid">
-        {% for item in page.sponsors %}
-            {% include sponsor.html %}
+
+
+      <div class="sponsors">
+        {% for sponsor in page.sponsors %}
+          {% include sponsor.html %}
         {% endfor %}
+      </div>
+
     </div>
+
     <div class="notice notice-info">
-      <h2>Ben jij een mogelijke partner?</h2>
-      <p>Dan horen we heel graag van je! Voor een meer uitgebreide presentatie van Fri3d Camp met nog meer facts &amp; figures, neem contact op met <a href="mailto:info@fri3d.be">info@fri3d.be</a></p>
+
+      <h2>Ben jij een mogelijke partner?<br>Wil je Fri3d Camp steunen en nog geweldiger maken?</h2>
+
+      <p>  
+        Dan horen we heel graag van je! Voor een meer uitgebreide presentatie
+        van Fri3d Camp met nog meer facts &amp; figures, neem contact op met <a
+        href="mailto:info@fri3d.be">info@fri3d.be</a>
+      </p>
+
     </div>

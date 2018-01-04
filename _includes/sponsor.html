@@ -1,3 +1,9 @@
-<article class="image sponsor">
-    <img src="{{ site.baseurl }}/sponsors/{{ item.img }}" alt="{{ item.name }}" />
+<article class="sponsor">
+  <img src="{{ site.baseurl }}/sponsors/{{ sponsor.img }}" alt="{{ sponsor.name }}" />
+  <div class="info">
+    {{ sponsor.info }}
+  </div>
+  <div class="sponsorship">
+    {{ sponsor.sponsorship }}
+  </div>
 </article>
