@@ -26,10 +26,10 @@
   url: '/about/'
   title: 'Over Fri3d Camp'
   children:
-    #- navitem: Sponsors
-    #  url: '/about/sponsors.html'
-    #  title: 'Sponsors'
-    #  parent: about
+    - navitem: Sponsors
+      url: '/about/sponsors.html'
+      title: 'Sponsors'
+      parent: about
     - navitem: Thema Robots
       url: '/about/thema.html'
       title: 'Thema Robots'
@@ -42,3 +42,6 @@
   url: 'https://content.fri3d.be/cfp'
   title: 'Jouw Voorstel'
   parent: deelnemen
+- navitem: english
+  url: '/english/'
+  title: 'English'

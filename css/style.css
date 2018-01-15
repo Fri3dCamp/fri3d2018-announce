@@ -722,7 +722,7 @@ body.page {
   color: #493F3A;
 }
 .mainnav {
-  font-size: 20px;
+  font-size: 16px;
   transition: top 0.5s;
   top: 0;
   z-index: 80;
