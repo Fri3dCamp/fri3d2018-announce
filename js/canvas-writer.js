@@ -198,33 +198,27 @@
     }
   }
 
-  var selection = 0;
+  var selection;
 
   function drawNextPixel() {
-    var c = writeText[drawChar];
-    var pixels;
-    if( Object.prototype.toString.call(writeData) == "[object Array]") {
-      if(drawPixel == 0) {
-        // we have multiple character descriptors, choose one randomly
-        selection = Math.floor(Math.random() * writeData.length);
-      }
-      pixels = writeData[selection];
-    } else {
-      // no alternatives
-      pixels = writeData;
+    // select a random charset from the font
+    var keys = Object.keys(writeData);
+    if(drawPixel == 0 && keys.length > 0) {
+      selection = writeData[keys[ keys.length * Math.random() << 0]];
     }
-    if( ! pixels ) {
+
+    if( ! selection ) {
       console.log("no pixels?");
       return;
     }
 
-    if( ! pixels[c] ) {
+    var c = writeText[drawChar];
+    if( ! selection[c] ) {
       console.log("unknown char " + c);
       return;
     }
-    // console.log("writing char " + c + " at offset " + offset);
 
-    pixels = pixels[c];
+    var pixels = selection[c];
 
     if(drawPixel < pixels.length) { // pixels left to draw ?
       if(drawPixel == 0) {
