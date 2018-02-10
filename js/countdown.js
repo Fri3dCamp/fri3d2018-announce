@@ -19,11 +19,19 @@ function updateClock() {
 
       updates = [];
 
-      // if querystring equals a special, predefined set, use that
-      var fontset = {
-        "binary" : binary,
-        "roman"  : roman
-      }[window.location.href.split("?")[1]] || font;
+      // as a default, pick from full font-set
+      var args    = window.location.href.split("?"),
+          charset = args.length > 0 ? args[1] : false,
+          fontset = font;
+      // if a specific charset is requested, provide only that one
+      if(charset) {
+        if( charset in specials) {
+          fontset = { charset : specials[charset] };
+        }
+        if( charset in font) {
+          fontset = { charset : font[charset] };
+        }
+      }
 
       var daysUpdate = ("000"+days).slice(-3);
       if(lastUpdate["days"] != daysUpdate) {
