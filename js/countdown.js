@@ -78,7 +78,7 @@ function processUpdates() {
   }
 }
 
-writer = CanvasWriter.withLine(5)
+writer = CanvasWriter.withLine(3)
                      .withScale(0.5)
                      .withSpace(30)
                      .setSpeed(2);
