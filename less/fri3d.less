@@ -540,23 +540,49 @@ strong {
     font-size: 4rem;
     font-weight: 600;
     padding: (@margin*3);
-    padding-left: 100px;
-    padding-right: 160px;
+    text-align: center;
     background-size: cover;
     line-height: 1.2;
+    margin-bottom: 0;
     @media screen and (max-width: @breakpoint2) {
         padding-right: (@margin*3);
         padding-left: (@margin*3);
     }
 }
 
+.cta .intro {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    padding-left: 150px;
+}
+
+.cta .body {
+    background-color: @clr-primary7;
+}
+
+#cta-sponsorcall .herottl {
+    background-color: @clr-tertiary5;
+    background-image: url('../img/money.jpg');
+}
+#cta-sponsorcall .body {
+    background-color: @clr-tertiary7;
+    padding: @margin*2;
+}
+
 #cta-cfp .herottl {
     background-image: url('../img/workshop_bg.jpg');
+    padding-left: 100px;
+    padding-right: 160px;
+    text-align: left;
 }
 
 #cta-contest .herottl {
     background-image: url('../img/logo_in_auto_bg.jpg');
     background-position: center -40px;
+    padding-left: 100px;
+    padding-right: 160px;
+    text-align: left;
 }
 
 .herotext {
