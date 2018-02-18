@@ -980,10 +980,10 @@ body.page {
   font-size: 4rem;
   font-weight: 600;
   padding: 24px;
-  padding-left: 100px;
-  padding-right: 160px;
+  text-align: center;
   background-size: cover;
   line-height: 1.2;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 550px) {
   .cta .herottl {
@@ -991,12 +991,35 @@ body.page {
     padding-left: 24px;
   }
 }
+.cta .intro {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  padding-left: 150px;
+}
+.cta .body {
+  background-color: #ddf0f4;
+}
+#cta-sponsorcall .herottl {
+  background-color: #B27A00;
+  background-image: url('../img/money.jpg');
+}
+#cta-sponsorcall .body {
+  background-color: #fff6e1;
+  padding: 16px;
+}
 #cta-cfp .herottl {
   background-image: url('../img/workshop_bg.jpg');
+  padding-left: 100px;
+  padding-right: 160px;
+  text-align: left;
 }
 #cta-contest .herottl {
   background-image: url('../img/logo_in_auto_bg.jpg');
   background-position: center -40px;
+  padding-left: 100px;
+  padding-right: 160px;
+  text-align: left;
 }
 .herotext {
   font-weight: 100;
