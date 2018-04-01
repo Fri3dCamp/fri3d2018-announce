@@ -37,6 +37,10 @@
       url: '/about/sponsors.html'
       title: 'Sponsors'
       parent: about
+    - navitem: Ecologie
+      url: '/about/eco.html'
+      title: 'Duurzaamheid'
+      parent: about
 - navitem: english
   url: '/english/'
   title: 'English'
