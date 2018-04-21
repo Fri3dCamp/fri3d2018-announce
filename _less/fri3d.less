@@ -186,6 +186,9 @@ strong {
     background-position: center;
     background-repeat: no-repeat;
     padding: (@margin*3);
+    @media screen and (max-width:@breakpoint3) {
+        padding:@margin;
+    }
     z-index: 100;
     position: relative;
 }
@@ -361,11 +364,11 @@ strong {
   }
 }*/
 
-.menu-container .menu-container {
+.menu-container .submenu-container {
     position: absolute;
     top:-9999px;
-    @media screen and (min-width:@breakpoint2) {
-        width: 100%;
+    @media screen and (min-width:@breakpoint2) {        
+        max-width: @rulelength-wide;
         left:0;
     }
     &.active {
@@ -376,10 +379,7 @@ strong {
         }
     }
     li {
-        display: block;
-        @media screen and (min-width:@breakpoint2) {
-            display:inline-block;
-        }
+        display: block;       
         a {
             font-size: @fntsize-1;
             background-color: @clr-primary7;
@@ -452,6 +452,45 @@ strong {
   }
 }
 
+.submenu-container {
+    background-color: @clr-primary7;
+    width: 100%;
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: block;
+    li {
+        display:block;
+        padding:0;
+        margin: 0;
+        border-bottom: 1px solid @clr-primary2;
+        a{ 
+            border-left:none;
+            border-right:none;
+            text-align: left;
+            display:block;
+            .label {
+                font-weight: bold;
+            }
+        }
+    }
+    li:last-of-type a {
+        border-right:none;
+    }
+    &.selected > a, &.active.selected > a {
+        background-color: @clr-primary7;
+        color:@clr-black1;
+    }
+    &.active > a {
+        background-color: @clr-primary6;
+        color:@clr-primary5;
+        &:hover {
+            background-color: @clr-primary7;
+            color:@clr-black1;
+        }
+    }
+}
+
 .logo {
     position: relative;
     margin: @margin*3 auto @margin*10;
@@ -468,6 +507,10 @@ strong {
         margin-top: @margin;
         width: 200px;
         height: 54px;
+    }
+    @media screen and (max-width:@breakpoint3) {
+        margin-bottom: @margin*2;
+        margin-top: @margin;
     }
 }
 

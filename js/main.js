@@ -101,7 +101,7 @@ function hide_submenu( container, delay = 500 ) {
     }
 }
 
-$(".menu-container li").has( ".menu-container" ).children("a").hover(
+$(".menu-container li").has( ".submenu-container" ).children("a").hover(
         function() {
             show_submenu($(this).parent().data("navitem"));
         },
@@ -109,7 +109,7 @@ $(".menu-container li").has( ".menu-container" ).children("a").hover(
             hide_submenu($(this).parent().data("navitem"),200);
         }
 );
-$(".menu-container .menu-container li").hover(
+$(".menu-container .submenu-container li").hover(
         function() {
             show_submenu($(this).parent().data("parent"));
         },

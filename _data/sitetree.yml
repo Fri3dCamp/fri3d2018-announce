@@ -9,18 +9,22 @@
       url: '/deelnemen/tickets.html'
       title: 'Tickets'
       parent: deelnemen
+      description: Tickets zijn beschikbaar vanaf 1 mei voor bezoekers van vorige edities.
     - navitem: locatie
       url: '/deelnemen/locatie.html'
       title: 'Locatie & route'
       parent: deelnemen
+      description: Informatie over het terrein en bereikbaarheid.
     - navitem: faq
       url: '/deelnemen/faq.html'
       title: 'FAQ'
       parent: deelnemen
+      description: Veelgestelde vragen
     - navitem: logo-contest
       url: '/deelnemen/logo-contest.html'
       title: 'Make&nbsp;the&nbsp;logo&nbsp;bigger'
       parent: deelnemen
+      description: Doe 'iets' met het logo en we verwennen je extra op Fri3d Camp.
 - navitem: about
   url: '/about/'
   title: 'Over Fri3d Camp'
@@ -29,18 +33,22 @@
       url: '/about/wat.html'
       title: 'Wat is Fri3d Camp?'
       parent: about
+      description: Wie en wat is Fri3d Camp?
     - navitem: Thema Robots
       url: '/about/thema.html'
       title: 'Thema Robots'
       parent: about
+      description: Jan De Coster is peter van Fri3d Camp en heeft ook een kampthema gekozen.
     - navitem: Sponsors
       url: '/about/sponsors.html'
       title: 'Sponsors'
       parent: about
+      description: Zonder onze sponsors zou de ticketprijs veel hoger liggen en was de badge een pak saaier.
     - navitem: Ecologie
       url: '/about/eco.html'
       title: 'Duurzaamheid'
       parent: about
+      description: We nemen onze verantwoordelijkheid en zorgen, samen met de deelnemers, voor weinig afval en een laag energieverbruik.
 - navitem: english
   url: '/english/'
   title: 'English'

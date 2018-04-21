@@ -1,9 +1,9 @@
 <li id="navitem-{{ item.navitem}}" data-navitem="{{ item.navitem}}"{% if page.navitem == item.navitem %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
     {% if item.children %}
-    <ul id="submenu-{{ item.navitem}}" class="menu-container" data-parent="{{ item.navitem}}">
+    <ul id="submenu-{{ item.navitem}}" class="submenu-container" data-parent="{{ item.navitem}}">
         {% for child in item.children %}
             {% if child.menu != false %}
-        <li><a href="{{ site.baseurl }}{{ child.url }}">{{ child.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ child.url }}"><span class="label">{{ child.title }}</span>: {{ child.description }}</a></li>
             {% endif %}
         {% endfor %}
     </ul>
