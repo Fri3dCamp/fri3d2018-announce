@@ -1,6 +1,9 @@
-- navitem: home
-  url: '/'
-  title: 'Home'
+- navitem: programma
+  url: '/program/'
+  title: 'Programma'
+- navitem: badge
+  url: '/badge/'
+  title: 'Badge'
 - navitem: deelnemen
   url: '/deelnemen/'
   title: 'Deelnemen'
@@ -12,9 +15,19 @@
       description: Tickets zijn beschikbaar vanaf 1 mei voor bezoekers van vorige edities.
     - navitem: locatie
       url: '/deelnemen/locatie.html'
-      title: 'Locatie & route'
+      title: 'Locatie'
       parent: deelnemen
-      description: Informatie over het terrein en bereikbaarheid.
+      description: Informatie over het terrein.
+    - navitem: bereikbaarheid
+      url: '/deelnemen/bereikbaarheid.html'
+      title: 'Bereikbaarheid'
+      parent: deelnemen
+      description: Hoe geraak je op Fri3d Camp?
+    - navitem: gedragscode
+      url: '/deelnemen/gedragscode.html'
+      title: 'Gedragscode'
+      parent: deelnemen
+      description: ‘Be Excellent to Eachother‘ is het motto van Fri3d Camp. Maar wat houdt dat precies in?
     - navitem: faq
       url: '/deelnemen/faq.html'
       title: 'FAQ'
