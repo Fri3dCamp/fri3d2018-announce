@@ -1,9 +1,9 @@
-
-{% if page.navlevel > 0 %}<nav class="breadcrumb"><i class="material-icons">home</i> <a href="{{ site.baseurl }}/">Home</a> &gt;
+{% if page.title != 'Home' %}
+<nav class="breadcrumb"><i class="material-icons">home</i> <a href="{{ site.baseurl }}/">Home</a> &gt;
      {% for item in site.data.sitetree %}
         {% if item.navitem == page.navitem %}
-            <a href="{{ item.url }}">{{ item.title }}</a> &gt;
+            <a href="{{ item.url }}">{{ item.title }}</a>{% if page.navlevel > 0 %} &gt;{% endif %}
         {% endif %}
-     {% endfor %} {{ page.title }}</nav>
+     {% endfor %}
+     {% if page.navlevel > 0 %}{{ page.title }}{% endif %}</nav>
 {% endif %}
-<h1 class="{% if page.navlevel == 0 %}printonly {% endif %}pagettl">{{ page.title }}</h1>

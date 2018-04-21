@@ -18,5 +18,6 @@
         <!-- /.mainnav -->
     </div>
     {% include breadcrumb.html %}
+    {% if page.title != 'Home' %}<h1 class="pagettl">{{ page.title }}</h1>{% endif %}
 {{ content }}
 {% include footer.html %}

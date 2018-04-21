@@ -544,10 +544,12 @@ body.page {
   width: 100%;
   height: auto;
 }
+.maincontent figcaption,
 .widecontent figcaption {
   padding: 16px;
-  background-color: #AFAAA7;
+  background-color: #EDEDED;
 }
+.maincontent figcaption a,
 .widecontent figcaption a {
   color: #025C6D;
 }
@@ -628,7 +630,7 @@ body.page {
   }
 }
 .subhead {
-  background-color: #025C6D;
+  background-color: #012e37;
   font-family: 'Montserrat', sans-serif;
   font-size: 4.8rem;
   font-weight: 300;
@@ -844,7 +846,7 @@ body.page {
   color: #000;
 }
 .menu-container li.active > a {
-  background-color: #abdbe4;
+  background-color: white;
   color: #025C6D;
 }
 .menu-container li.active > a:hover {
@@ -1457,6 +1459,24 @@ a.button:hover {
 .linkblock-right {
   float: right;
   margin-right: 0;
+}
+@media screen and (max-width: 550px) {
+  .mapviewer {
+    display: none;
+  }
+}
+.map_on_mobile {
+  display: none;
+}
+@media screen and (max-width: 550px) {
+  .map_on_mobile {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+.mapcaption {
+  text-align: center;
 }
 .imggrid {
   max-width: 300px;
