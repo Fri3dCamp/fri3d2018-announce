@@ -924,3 +924,20 @@ strong {
     float: right;
     margin-right: 0;
 }
+
+.mapviewer {
+    @media screen and (max-width:@breakpoint2) {
+        display:none;
+    }
+}
+.map_on_mobile {
+    display:none;
+    @media screen and (max-width:@breakpoint2) {
+        display:block;
+        margin-bottom:@margin;
+        width:100%;
+    }
+}
+.mapcaption {
+    text-align: center;
+}
