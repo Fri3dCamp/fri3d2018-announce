@@ -18,6 +18,16 @@
       title: 'Locatie'
       parent: deelnemen
       description: Informatie over het terrein.
+    - navitem: catering
+      url: '/deelnemen/catering.html'
+      title: 'Catering'
+      parent: deelnemen
+      description: Wat is er voorzien qua voeding en drank op het terrein?
+    - navitem: checklist
+      url: '/deelnemen/checklist.html'
+      title: 'Checklist'
+      parent: deelnemen
+      description: Waar moet je op letten bij het voorbereiden en inpakken?
     - navitem: bereikbaarheid
       url: '/deelnemen/bereikbaarheid.html'
       title: 'Bereikbaarheid'
@@ -46,7 +56,12 @@
       url: '/about/wat.html'
       title: 'Wat is Fri3d Camp?'
       parent: about
-      description: Wie en wat is Fri3d Camp?
+      description: Wat maakt Fri3d Camp bijzonder?
+    - navitem: Wie organiseert Fri3d Camp?
+      url: '/about/wie.html'
+      title: 'Wie organiseert Fri3d Camp?'
+      parent: about
+      description: Hoe zit de organisatie van Fri3d Camp in elkaar?
     - navitem: Thema Robots
       url: '/about/thema.html'
       title: 'Thema Robots'
@@ -62,6 +77,11 @@
       title: 'Duurzaamheid'
       parent: about
       description: We nemen onze verantwoordelijkheid en zorgen, samen met de deelnemers, voor weinig afval en een laag energieverbruik.
+    - navitem: Pers
+      url: '/about/pers.html'
+      title: 'Pers'
+      parent: about
+      description: Wil je als journalist Fri3d Camp bezoeken?
 - navitem: english
   url: '/english/'
   title: 'English'
