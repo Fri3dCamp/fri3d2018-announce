@@ -15,7 +15,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #gems:
 #  - jekyll-feed
 exclude:
+  - gulpfile.js
+  - package.json
+  - README.md
   - Gemfile
   - Gemfile.lock
   - less/
   - node_modules/
+collections:
+  faq:
+    output: false

@@ -13,26 +13,26 @@
       title: 'Tickets'
       parent: deelnemen
       description: Tickets zijn beschikbaar vanaf 1 mei voor bezoekers van vorige edities.
-    - navitem: locatie
-      url: '/deelnemen/locatie.html'
-      title: 'Locatie'
-      parent: deelnemen
-      description: Informatie over het terrein.
-    - navitem: catering
-      url: '/deelnemen/catering.html'
-      title: 'Catering'
-      parent: deelnemen
-      description: Wat is er voorzien qua voeding en drank op het terrein?
     - navitem: checklist
       url: '/deelnemen/checklist.html'
       title: 'Checklist'
       parent: deelnemen
       description: Waar moet je op letten bij het voorbereiden en inpakken?
+    - navitem: locatie
+      url: '/deelnemen/locatie.html'
+      title: 'Locatie'
+      parent: deelnemen
+      description: Informatie over het terrein.
     - navitem: bereikbaarheid
       url: '/deelnemen/bereikbaarheid.html'
       title: 'Bereikbaarheid'
       parent: deelnemen
       description: Hoe geraak je op Fri3d Camp?
+    - navitem: catering
+      url: '/deelnemen/catering.html'
+      title: 'Catering'
+      parent: deelnemen
+      description: Wat is er voorzien qua voeding en drank op het terrein?
     - navitem: gedragscode
       url: '/deelnemen/gedragscode.html'
       title: 'Gedragscode'
@@ -43,6 +43,11 @@
       title: 'FAQ'
       parent: deelnemen
       description: Veelgestelde vragen
+    - navitem: contentbringers
+      url: '/deelnemen/contentbringers.html'
+      title: 'Info voor workshophosts en sprekers'
+      parent: deelnemen
+      description: Dingen die je moet weten voor je workshop of talk.
     - navitem: logo-contest
       url: '/deelnemen/logo-contest.html'
       title: 'Make&nbsp;the&nbsp;logo&nbsp;bigger'

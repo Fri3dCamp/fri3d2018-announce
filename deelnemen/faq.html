@@ -4,15 +4,21 @@ title: FAQ
 navitem: deelnemen
 navlevel: 1
 ---
-<div class="maincontent">
-  <h2>Hoe ziet jouw dag op Fri3d Camp eruit?</h2>
-  <p>Iedereen is vrij om te doen wat 'ie wil. Je kan deelnemen aan workshops, lezingen bijwonen, met je kinderen een episch kamp maken in het bos, zelf iets organiseren,&hellip;</p>
-  <p>Elke ochtend wordt het programma voorgesteld, meestal is dat rond 10u. Dat is een handig startpunt om je dag te beginnen.</p>
-  <figure>
-    <img src="{{ site.baseurl }}/photos/fri3d2016/9.jpg" alt="opening 2016" />
-  </figure>
-  <p>Doorheen de dag <strong>maak jij mee het kamp</strong>. Je hebt misschien ergens een vrijwilligersshift gepland, of samen met een paar andere deelnemers boks je een bosspel in elkaar.</p>
-  <p>Bij de vorige edities van Fri3d Camp was er op twee avonden een warme maaltijd. Dat samen eten was altijd een leuk moment, en dat willen we ook in 2018 georganiseerd krijgen. De precieze vorm zijn we nu nog aan het uitzoeken.</p>
-  <p>Later op de avond lezen we ook een verhaaltje voor voor de kinderen die dat willen, en nóg later op de avond lezen we ook voor de volwassenen een spannend verhaal voor.</p>
+<div class="notice">
+    <p>Deze FAQ wordt voortdurend up to date gehouden. Zit je zelf met een vraag die je hier niet terugvindt? Mail naar <a href="info@fri3d.be">info@fri3d.be</a> of stel ze op <a href="https://www.twitter.com/fri3dcamp">Twitter</a> of <a href="https://www.facebook.com/fri3dcamp">Facebook</a>.</p>
 </div>
-{% include slideshow.html %}
+<div class="maincontent">
+    <ul>
+    {% for q in site.faq %}
+    <li><a href="#faq_{{ q.title | slugify }}">{{q.title}}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+<div class="maincontent">
+    {% for q in site.faq %}
+    <article class="faqitem" id="faq_{{ q.title | slugify }}">
+        <h2 class="faqttl">{{q.title}}</h2>
+        {{ q.content }}
+    </article>
+    {% endfor %}
+</div>
