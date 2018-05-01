@@ -87,6 +87,11 @@
       title: 'Pers'
       parent: about
       description: Wil je als journalist Fri3d Camp bezoeken?
+    - navitem: Styleguide
+      url: '/about/styleguide.html'
+      title: 'Styleguide'
+      parent: about
+      description: Kleuren en logo van Fri3d Camp
 - navitem: english
   url: '/english/'
   title: 'English'
