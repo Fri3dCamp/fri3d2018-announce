@@ -195,6 +195,37 @@ strong {
   }
 }
 
+.subfooter {
+    padding: (@margin*3);
+    background-color: white;
+    .sponsors {
+        margin-top: 0;
+    }
+    p {
+        text-align:center;
+    }
+}
+
+.subfooter .logolist {
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        list-style: none;
+        padding:0;
+        margin:0;
+        padding-right:(@margin*3);
+        padding-left:(@margin*3);
+    }
+    img {
+        height:50px;
+        width: auto;
+    }
+}
+
 .pagehead {
     background-color: @clr-primary8;
     background-image: url('../img/header_forest.jpg');

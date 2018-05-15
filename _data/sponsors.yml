@@ -1,0 +1,58 @@
+- name: 'Dekimo'
+  img: dekimo.jpg
+  info: Dekimo is a leading independent electronic services supplier in the Benelux. Customer satisfaction is our most important achievement. Dekimo delivers development services as well as a production facilities. Development of electronics &amp; software, consultancy &amp; flexible staffing in electronics &amp; software, PCB design/layout and EMC measurements, series production and assembly of PCBAs and mechatronics solutions.
+  context: badge
+  type: material
+  sponsorship: Naast de assemblage van de Fri3d Camp badge, sponsort Dekimo tevens het merendeel van de meer dan  150 componenten die op de badge komen te staan.
+- name: 'Espressif'
+  img: espressif.png
+  info: Espressif Systems is a world-leading Internet-of-Things company. The company designs a range of high-performance Wi-Fi+Bluetooth (BLE) chipsets and modules. It built the widely popular ESP8266 and ESP32 chips. It also has an innovative team of chip-design specialists, software/firmware developers and marketers. Espressif Systems is committed to providing the best IoT devices and software platforms in the industry.
+  context: badge
+  type: material
+  sponsorship: Espressif sponsort de ESP32 module voor alle Fri3d Camp badges.
+- name: 'AQC'
+  img: aqc.png
+  info: AQC is één van de meest technisch vaardige leveranciers van verbindingen in de vorm van PCB’s voor de High Tech industrie. Met het hoofdkwartier gezeteld in Nederland, focust AQC zich erop om marktleider te worden in deze producten waaraan de meest veeleisende internationale kwaliteitseisen gesteld worden. We zijn constant bezig met innovatieve oplossingen voor vragen en opdrachten van klanten.
+  context: badge
+  type: material
+  sponsorship: AQC ondersteunt ons door een sponsoring-budget aan te bieden dat ons in staat stelt om de 700 PCBs door hen te laten produceren. 
+- name: 'Wireless België'
+  img: wireless-belgium.png
+  info: Wat meer dan 10 jaar geleden begon als een lokaal project van enkele enthousiastelingen uit het Antwerpse is uitgegroeid tot een nationaal netwerk met meer dan 600 wijd verspreide toegangspunten.
+  context: camp
+  type: material
+  sponsorship: Wireless België zorgt er voor dat alle deelnemers op Fri3d Camp kunnen genieten van een schitterend draadloos netwerk.
+- name: 'De Werkkamer'
+  img: dewerkkamer.png
+  info: De Werkkamer restaureert en herstelt meubelen, schilderijen en objecten. Daarnaast maakt De Werkkamer meubelen via 2- en 3 D CNC freestechnieken, complementair aan maar ook geïntegreerd in de restauratieactiviteiten. Opgericht in 1999 als restauratieatelier breidde De Werkkamer haar activiteiten uit met het uitvoeren van speciale projecten en de combinatie van restauratie en renovatieprojecten zowel in privé als in openbare context.
+  context: camp
+  type: material
+  sponsorship: Net zoals tijdens de tweede editie, zorgt De Werkkamer opnieuw voor prachtige gefreesde bewegwijzering, zodat niemand de weg kwijt geraak op Fri3d Camp.
+- name: 'Novid'
+  img: novid.png
+  info: Novid is gespecialiseerd in de verhuur van audiovisueel materiaal. Samen met onze klanten én de klanten van onze klanten creëren we de beste, meest authentieke totaalervaringen. En dit via kwalitatieve audiovisuele technologie en gepaste dienstverlening.
+  context: camp
+  type: material
+  sponsorship: Al drie edities lang stelt Novid hun audiovisueel materiaal ter beschikking van Fri3d Camp.
+- name: 'Bosch'
+  img: bosch.jpg
+  info: Bosch gereedschappen zijn van indrukwekkende kwaliteit, zijn gemakkelijk om mee te werken en beschikken over geavanceerde technologie.
+  context: camp
+  type: material
+  sponsorship: Bosch levert gereedschap om te gebruiken tijdens activiteiten op Fri3d Camp.
+- name: 'Fablabfactory'
+  img: fablabfactory.png
+  info: Fablab Factory helpt en begeleidt scholen en organisaties bij het opzetten van een Fablab. Van het kiezen van materiaal en toestellen tot het geven van training en het opzetten van een curriculum.
+  context: camp
+  type: material
+  sponsorship: De STEAM machine, het mobile Fablab van Fablabfactory, zal op Fri3d Camp aanwezig zijn.
+- name: 'Linux Belgium'
+  img: linuxbe.jpg
+  info: Linux Belgium ondersteunt bedrijven en organisaties bij het inzetten van Linux. Door het geven van advies en het inrichten van opleidingen en certificatie-trajecten.
+  context: camp
+  type: financial
+- name: 'Blue Bits'
+  img: bluebits.jpg
+  info: Bluebits is een bedrijf dat software graag eenvoudig maakt. Geen hersenbrekers, geen dure opleidingen, gewoon software die doet wat je ervan verwacht.
+  context: camp
+  type: financial

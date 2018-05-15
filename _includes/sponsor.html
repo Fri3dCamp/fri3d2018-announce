@@ -3,7 +3,9 @@
   <div class="info">
     {{ sponsor.info }}
   </div>
+  {% if 'material' == sponsor.type %}
   <div class="sponsorship">
     {{ sponsor.sponsorship }}
   </div>
+  {% endif %}
 </article>
