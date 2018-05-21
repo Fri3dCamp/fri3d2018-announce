@@ -22,6 +22,18 @@
   context: camp
   type: material
   sponsorship: Wireless België zorgt er voor dat alle deelnemers op Fri3d Camp kunnen genieten van een schitterend draadloos netwerk.
+- name: 'Eventinfra.org'
+  img: eventinfra.png
+  info: Stichting EventInfra is een open project, opgericht door leden van Stichting Bitlair, de hackerspace in Amersoort (NL). EventInfra ondersteunt verschillende tech-events in de EU door netwerkmateriaal uit te lenen.
+  context: camp
+  type: material
+  sponsorship: Eventinfra zal onze internetinfrastructuur op Fri3d Camp leveren zodat het draadloze netwerk ook overal beschikbaar is.
+- name: 'Dommel'
+  img: dommel.png
+  info: Al 20 jaar lang is dommel.com de oplossing als u écht onbeperkt wil downloaden, prijsbreker en pionier op de markt en uw enige alternatief in België!
+  context: camp
+  type: material
+  sponsorship: Dommel is onze internetleverancier.
 - name: 'De Werkkamer'
   img: dewerkkamer.png
   info: De Werkkamer restaureert en herstelt meubelen, schilderijen en objecten. Daarnaast maakt De Werkkamer meubelen via 2- en 3 D CNC freestechnieken, complementair aan maar ook geïntegreerd in de restauratieactiviteiten. Opgericht in 1999 als restauratieatelier breidde De Werkkamer haar activiteiten uit met het uitvoeren van speciale projecten en de combinatie van restauratie en renovatieprojecten zowel in privé als in openbare context.
@@ -35,7 +47,7 @@
   type: material
   sponsorship: Al drie edities lang stelt Novid hun audiovisueel materiaal ter beschikking van Fri3d Camp.
 - name: 'Bosch'
-  img: bosch.jpg
+  img: bosch.png
   info: Bosch gereedschappen zijn van indrukwekkende kwaliteit, zijn gemakkelijk om mee te werken en beschikken over geavanceerde technologie.
   context: camp
   type: material
@@ -54,5 +66,10 @@
 - name: 'Blue Bits'
   img: bluebits.jpg
   info: Bluebits is een bedrijf dat software graag eenvoudig maakt. Geen hersenbrekers, geen dure opleidingen, gewoon software die doet wat je ervan verwacht.
+  context: camp
+  type: financial
+- name: 'Rombit'
+  img: rombit.png
+  info: Rombit is een IoT-solution provider die organisaties snel futureproof wil maken. Verbeter efficiëntie, veiligheid en gebruiksvriendelijkheid.
   context: camp
   type: financial
