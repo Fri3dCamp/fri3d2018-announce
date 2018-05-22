@@ -1,7 +1,18 @@
 <article class="sponsor">
+  {% if sponsor.link %}
+  <a href="{{sponsor.link}}" target="_blank">
+  {% endif %}
   <img src="{{ site.baseurl }}/sponsors/{{ sponsor.img }}" alt="{{ sponsor.name }}" />
+  {% if sponsor.link %}
+  </a>
+  {% endif %}
   <div class="info">
+    <p>
     {{ sponsor.info }}
+  </p>
+    {% if sponsor.link %}
+      <p><a href="{{sponsor.link}}" target="_blank">{{sponsor.link}}</a></p>
+      {% endif %}
   </div>
   {% if 'material' == sponsor.type %}
   <div class="sponsorship">
