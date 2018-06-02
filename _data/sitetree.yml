@@ -115,12 +115,7 @@
       url: '/english/code_of_conduct.html'
       title: Code of Conduct
       parent: english
-      description: ‘Be Excellent to each other‘ is the Fri3d Camp motto. But what does that mean, exactly? 
-    - navitem: Location
-      url: '/english/location.html'
-      title: Location
-      parent: english
-      description: Information about the venue. 
+      description: ‘Be Excellent to each other‘ is the Fri3d Camp motto. But what does that mean, exactly?     
     - navitem: How to get there
       url: '/english/getthere.html'
       title: How to get there
