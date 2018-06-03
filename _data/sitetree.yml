@@ -95,3 +95,35 @@
 - navitem: english
   url: '/english/'
   title: 'English'
+  children:
+    - navitem: About Fri3d Camp
+      url: '/english/about.html'
+      title: About Fri3d Camp
+      parent: english
+      description: What is Fri3d Camp?
+    - navitem: Catering
+      url: '/english/catering.html'
+      title: Catering
+      parent: english
+      description: All about food and drink during Fri3d Camp 
+    - navitem: Checklist
+      url: '/english/checklist.html'
+      title: Checklist
+      parent: english
+      description: Things you shouldn't forget while preparing for Fri3d Camp 
+    - navitem: Code of Conduct
+      url: '/english/code_of_conduct.html'
+      title: Code of Conduct
+      parent: english
+      description: ‘Be Excellent to each other‘ is the Fri3d Camp motto. But what does that mean, exactly?     
+    - navitem: How to get there
+      url: '/english/getthere.html'
+      title: How to get there
+      parent: english
+      description: The best way(s) to get to Fri3d Camp 
+    - navitem: Tickets
+      url: '/english/tickets.html'
+      title: Tickets
+      parent: english
+      description: Get your tickets for Fri3d Camp now!
+
