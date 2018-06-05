@@ -86,3 +86,21 @@
   context: camp
   type: financial
   link: https://rombit.be
+- name: 'Vlaamse Overheid'
+  img: vo.png
+  info: 
+  context: camp
+  type: financial
+  link: https://www.ewi-vlaanderen.be/
+- name: 'STEM-actieplan'
+  img: stem.jpg
+  info: De samenleving van vandaag heeft meer mensen nodig met een STEM-profiel. Om jongeren te stimuleren om voor STEM-opleidingen en -loopbanen te kiezen, werkte de Vlaamse Regering het STEM-actieplan uit. Dat actieplan trad in 2012 in werking en moet tegen 2020 8 doelstellingen realiseren.
+  context: camp
+  type: financial
+  link: https://onderwijs.vlaanderen.be/nl/stem
+- name: 'Richting Morgen'
+  img: richtingmorgen.jpg
+  info: De campagne Richting Morgen wil zoveel mogelijk mensen warm maken voor wetenschap, technologie, creativiteit en innovatie en hun toepassingen in onze samenleving.
+  context: camp
+  type: financial
+  link: http://www.richtingmorgen.be/
