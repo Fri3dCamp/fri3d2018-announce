@@ -1031,3 +1031,39 @@ blockquote.citation {
         font-style: italic;
     }
 }
+
+.navblocks {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: @margin*2;
+    list-style: none;
+    margin:0;
+    padding:0;
+    .navblock {
+        background-color:@clr-primary8;
+        background-image: url('../img/header_forest.jpg');
+        &:first-of-type {
+            background-position: 300px -100px;
+        }
+        &:last-of-type {
+            background-position: 700px -100px;
+        }
+        min-height:200px;
+        font-size: @fntsize-3;
+        font-weight:bold;
+        line-height:1.2em;
+        a {
+            color:white;
+            border-top:4px solid @clr-tertiary1;
+            padding:@margin*2;
+            &:hover {
+                border-color: @clr-secondary1;
+            }
+        }
+    }
+}
+
+.blocklink {
+    display:block;
+    height: 100%;
+}

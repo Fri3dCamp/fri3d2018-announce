@@ -1,5 +1,5 @@
 - navitem: programma
-  url: '/program/'
+  url: 'http://program.fri3d.be/'
   title: 'Programma'
 - navitem: badge
   url: '/badge/'
