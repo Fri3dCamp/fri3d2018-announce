@@ -104,3 +104,9 @@
   context: camp
   type: financial
   link: http://www.richtingmorgen.be/
+- name: 'Rogers Corporation'
+  img: rogers.jpg
+  info: Rogers Corporation is passionate about helping the world's leading innovators solve their toughest material challenges and create a cleaner, safer, and more connected world.
+  context: camp
+  type: financial
+  link: https://www.rogerscorp.com/
