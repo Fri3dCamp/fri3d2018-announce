@@ -53,6 +53,11 @@
       title: 'Make&nbsp;the&nbsp;logo&nbsp;bigger'
       parent: deelnemen
       description: Doe 'iets' met het logo en we verwennen je extra op Fri3d Camp.
+    - navitem: privacy
+      url: '/deelnemen/privacy.html'
+      title: 'Jouw privacy'
+      parent: deelnemen
+      description: Hoe gaat Fri3d Camp om met jouw gegevens?
 - navitem: about
   url: '/about/'
   title: 'Over Fri3d Camp'
