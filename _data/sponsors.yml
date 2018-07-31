@@ -110,3 +110,9 @@
   context: camp
   type: financial
   link: https://www.rogerscorp.com/
+- name: 'Colruyt group'
+  img: colruyt.png
+  info: Colruyt Group is meer dan de Colruyt-winkels. Het is een familie van bedrijven zoals Bio-Planet, Dreambaby, Dats 24, &hellip;
+  context: camp
+  type: financial
+  link: https://www.colruytgroup.com/
