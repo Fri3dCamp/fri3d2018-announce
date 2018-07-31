@@ -12,7 +12,7 @@
       url: '/deelnemen/tickets.html'
       title: 'Tickets'
       parent: deelnemen
-      description: Je kan nu tickets kopen voor Fri3d Camp 2018.
+      description: Alles over tickets voor Fri3d Camp.
     - navitem: checklist
       url: '/deelnemen/checklist.html'
       title: 'Checklist'
@@ -130,5 +130,5 @@
       url: '/english/tickets.html'
       title: Tickets
       parent: english
-      description: Get your tickets for Fri3d Camp now!
+      description: Everything about tickets for Fri3d Camp
 
