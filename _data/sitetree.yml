@@ -8,11 +8,6 @@
   url: '/deelnemen/'
   title: 'Deelnemen'
   children:
-    - navitem: tickets
-      url: '/deelnemen/tickets.html'
-      title: 'Tickets'
-      parent: deelnemen
-      description: Alles over tickets voor Fri3d Camp.
     - navitem: checklist
       url: '/deelnemen/checklist.html'
       title: 'Checklist'
@@ -58,6 +53,11 @@
       title: 'Jouw privacy'
       parent: deelnemen
       description: Hoe gaat Fri3d Camp om met jouw gegevens?
+    - navitem: tickets
+      url: '/deelnemen/tickets.html'
+      title: 'Tickets'
+      parent: deelnemen
+      description: Alles over tickets voor Fri3d Camp.
 - navitem: about
   url: '/about/'
   title: 'Over Fri3d Camp'
