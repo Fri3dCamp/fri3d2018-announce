@@ -1,0 +1,25 @@
+---
+layout: default
+title: FAQ
+navitem: deelnemen
+navlevel: 1
+---
+<div class="maincontent">
+    <ul>
+    {% for q in site.faq %}
+    {% if q.ignore != true %}
+    <li><a href="#faq_{{ q.title | slugify }}">{{q.title}}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+</div>
+<div class="maincontent">
+    {% for q in site.faq %}
+    {% if q.ignore != true %}
+    <article class="faqitem" id="faq_{{ q.title | slugify }}">
+        <h2 class="faqttl">{{q.title}}</h2>
+        {{ q.content }}
+    </article>
+    {% endif %}
+    {% endfor %}
+</div>

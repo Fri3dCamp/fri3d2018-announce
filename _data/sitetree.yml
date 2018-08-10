@@ -13,16 +13,16 @@
       title: 'Checklist'
       parent: deelnemen
       description: Waar moet je op letten bij het voorbereiden en inpakken?
+    - navitem: tijdens
+      url: '/deelnemen/tijdens.html'
+      title: 'Tijdens Fri3d Camp'
+      parent: deelnemen
+      description: Alle praktische info voor tijdens Fri3d Camp.
     - navitem: locatie
       url: '/deelnemen/locatie.html'
-      title: 'Locatie'
+      title: 'Locatie en bereikbaarheid'
       parent: deelnemen
-      description: Informatie over het terrein.
-    - navitem: bereikbaarheid
-      url: '/deelnemen/bereikbaarheid.html'
-      title: 'Bereikbaarheid'
-      parent: deelnemen
-      description: Hoe geraak je op Fri3d Camp?
+      description: Informatie over het terrein en hoe er te geraken.
     - navitem: catering
       url: '/deelnemen/catering.html'
       title: 'Catering'
@@ -32,12 +32,7 @@
       url: '/deelnemen/gedragscode.html'
       title: 'Gedragscode'
       parent: deelnemen
-      description: ‘Be Excellent to each other‘ is het motto van Fri3d Camp. Maar wat houdt dat precies in?
-    - navitem: faq
-      url: '/deelnemen/faq.html'
-      title: 'FAQ'
-      parent: deelnemen
-      description: Veelgestelde vragen
+      description: ‘Be Excellent to each other‘ is het motto van Fri3d Camp. Maar wat houdt dat precies in?      
     - navitem: contentbringers
       url: '/deelnemen/contentbringers.html'
       title: 'Info voor workshophosts en sprekers'
@@ -53,11 +48,6 @@
       title: 'Jouw privacy'
       parent: deelnemen
       description: Hoe gaat Fri3d Camp om met jouw gegevens?
-    - navitem: tickets
-      url: '/deelnemen/tickets.html'
-      title: 'Tickets'
-      parent: deelnemen
-      description: Alles over tickets voor Fri3d Camp.
 - navitem: about
   url: '/about/'
   title: 'Over Fri3d Camp'
@@ -77,6 +67,11 @@
       title: 'Thema Robots'
       parent: about
       description: Jan De Coster is peter van Fri3d Camp en heeft ook een kampthema gekozen.
+    - navitem: faq
+      url: '/about/faq.html'
+      title: 'FAQ'
+      parent: deelnemen
+      description: Veelgestelde vragen.
     - navitem: Sponsors
       url: '/about/sponsors.html'
       title: 'Sponsors'
