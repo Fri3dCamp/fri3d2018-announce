@@ -68,7 +68,9 @@ $ gulp
 
 Je zal merken dat dit ook het regenereren van de Jekyll site triggert.
 
-Check [http://localhost:4000](http://localhost:4000) om je wijzigingen te valideren.
+Check [http://localhost:5000](http://localhost:5000) om je wijzigingen te valideren.
+
+De site is beschikbaar op poort 5000, omdat dit zo geconfigureerd staat in _config.yml. Dit poortnummer kan aangepast worden, om conflicten met andere locale sites te vermijden (dan moet de Jekyll server wel gestopt en herstart worden)
 
 Wil je een niet-minified css genereren dan doe je
 

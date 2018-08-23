@@ -25,3 +25,4 @@ exclude:
 collections:
   faq:
     output: false
+port: 5000
