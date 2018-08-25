@@ -1341,29 +1341,11 @@ a.button:hover {
 .slideshowwrapper {
   padding: 10px 60px;
   max-width: 100%;
-  /*img {
-        height: 600px;
-        @media screen and (max-width:@breakpoint1) {
-          height: 300px;
-        }
-        @media screen and (max-width:@breakpoint2) {
-          height: 200px;
-        }
-        width: auto;
-    }*/
 }
 @media screen and (max-width: 800px) {
   .slideshowwrapper {
     padding: 10px 30px;
   }
-}
-.slideshowwrapper div {
-  /*width: 100%;
-    height:600px;
-    background-color: @clr-black1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;*/
 }
 .fri3d-slideshowwrapper {
   max-width: 900px;
@@ -1476,6 +1458,10 @@ a.button:hover {
 }
 .fri3d-slideshow {
   overflow: hidden;
+}
+.photo-copyright {
+  text-align: center;
+  font-size: 12px;
 }
 .printonly {
   display: none;
