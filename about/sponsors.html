@@ -1,0 +1,79 @@
+---
+layout: default
+title: Sponsors
+navitem: about
+navlevel: 1    
+---
+    <div class="maincontent">
+
+      <p>
+        Een evenement zoals Fri3d Camp vraagt naast heel wat voorbereiding en
+        de inzet van vrijwilligers &amp; deelnemers, ook een aardig budget om
+        iedereen gedurende drie dagen in de beste omstandigheden te ontvangen.
+      </p>
+
+  </div>
+  <div class="cta" id="cta-sponsorcall">
+      <h2 class="herottl">Maakt jouw bedrijf mee van Fri3d Camp een succes?</h2>
+    <div class="body">
+
+        <p><strong>Dankzij jou</strong> als financiële sponsor:</p>
+        <ul>
+            <li>Verlagen we de ticketprijs voor iedereen</li>
+            <li>Creëren we een badge met (heel) veel features</li>
+            <li>Kunnen we materiaal voorzien voor workshops</li>
+            <li>Zijn er (veel) meer lichtjes</li>
+        </ul>
+        <p>
+            <strong>Per schijf van € 1000 krijg je een  ticket</strong> voor Fri3d Camp. Sponsors krijgen ook aandacht op de site, in alle mailings en occasioneel op sociale media.
+        </p>
+        <p>
+            Maar onze <strong>grootste troef is ons publiek</strong>. We bieden een enthousiast en divers publiek dat graag creatief aan de slag gaat met technologie, en niet bang is voor onbekend terrein.
+        </p>
+        <p>Ben jij een mogelijke sponsor? Dan horen we heel graag van je! We sturen je graag een meer <strong>uitgebreide presentatie van Fri3d Camp met meer facts & figures</strong>.
+        </p>
+
+    </div>
+    <div class="linkbar">
+        <a
+         href="mailto:info@fri3d.be" class="primary">Vraag meer informatie</a>
+    </div>
+  </div>
+  <div class="maincontent">
+
+      <p>
+        Dankzij deze materiële sponsors konden we al heel wat realiseren, om Fri3d Camp uniek en bijzonder te maken. <strong>Bedankt!</strong>
+      </p>
+
+      <h2>Materiële sponsors</h2>
+      <div class="sponsors">
+        {% for sponsor in site.data.sponsors %}
+          {% if 'material' == sponsor.type %}
+            {% include sponsor.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+
+
+      <h2>Financiële sponsors</h2>
+      <div class="sponsors sponsors-financial">
+          {% for sponsor in site.data.sponsors %}
+            {% if 'financial' == sponsor.type %}
+              {% include sponsor.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
+
+    </div>
+    <div class="notice notice-info">
+
+      <h2>We zijn nog op zoek naar financiële sponsors</h2>
+      <p>
+          <strong>Per schijf van € 1000 krijg je een  ticket</strong> voor Fri3d Camp. Sponsors krijgen ook aandacht op de site, in alle mailings en occasioneel op sociale media.
+      </p>
+      <p>
+        We bezorgen je graag meer informatie! Voor een meer uitgebreide presentatie van Fri3d Camp met <strong>nog meer facts & figures</strong>, neem contact op met <strong><a
+        href="mailto:info@fri3d.be">info@fri3d.be</a></strong>
+      </p>
+
+    </div>

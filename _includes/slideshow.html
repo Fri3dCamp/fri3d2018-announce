@@ -1,0 +1,26 @@
+<!-- begin slideshow -->
+<div class="widecontent">
+    <h2>Snuif alvast de sfeer op in deze foto's van de edities 2014 en 2016</h2>
+    <p class="printonly printonly-box">Om bomen te redden, worden de foto's uit de slideshows niet afgedrukt.</p>
+    <div class="fri3d-slideshowwrapper">
+        <div class="fri3d-slideshow">
+            <ul class="images">
+                {% for i in (1..19) %}
+                    <li data-volgnr="{{ i }}">
+                        <img src="{{ site.baseurl }}/photos/fri3d2016/{{ i }}-tn.jpg" />
+                    </li>
+                {% endfor %}
+                {% for i in (1..30) %}
+                    <li data-volgnr="{{ i | plus:19 }}">
+                        <img src="{{ site.baseurl }}/photos/fri3d2014/{{ i }}-tn.jpg" />
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="slideshow-nav">
+            <ul class="nav-dots">
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end slideshow -->
