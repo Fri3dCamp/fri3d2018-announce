@@ -1,3 +1,6 @@
+- navitem: fri3d2020
+  url: '/'
+  title: 'Fri3d 2020'
 - navitem: programma
   url: 'http://program.fri3d.be/'
   title: 'Programma'
@@ -50,7 +53,7 @@
       description: Hoe gaat Fri3d Camp om met jouw gegevens?
 - navitem: about
   url: '/about/'
-  title: 'Over Fri3d Camp'
+  title: 'Over'
   children:
     - navitem: Wat is Fri3d Camp?
       url: '/about/wat.html'

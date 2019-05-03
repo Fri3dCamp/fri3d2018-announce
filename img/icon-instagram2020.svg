@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#56b6c8;}
+</style>
+<g>
+	<path class="st0" d="M69.1,97H30.9C16.2,97,4.3,85,4.3,70.4V29.6C4.3,15,16.2,3,30.9,3h38.2c14.6,0,26.6,12,26.6,26.6v40.7
+		C95.7,85,83.8,97,69.1,97z M69.1,89.9c5.2,0,10.1-2,13.8-5.8s5.8-8.6,5.8-13.8V29.6c0-5.2-2-10.1-5.8-13.8s-8.6-5.8-13.8-5.8H30.9
+		c-5.2,0-10.1,2-13.8,5.8s-5.8,8.6-5.8,13.8v40.7c0,5.2,2,10.1,5.8,13.8s8.6,5.8,13.8,5.8H69.1z"/>
+	<path class="st0" d="M75.3,49.6c0,13.9-11.3,25.2-25.2,25.2S25,63.5,25,49.6s11.3-25.2,25.2-25.2S75.3,35.7,75.3,49.6z M50,33.2
+		c-9.1,0-16.5,7.4-16.5,16.5S40.9,66.1,50,66.1s16.5-7.4,16.5-16.5S59.1,33.2,50,33.2z"/>
+	<circle class="st0" cx="75.7" cy="24.1" r="6"/>
+</g>
+</svg>
