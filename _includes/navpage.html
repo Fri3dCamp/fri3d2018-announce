@@ -1,0 +1,14 @@
+<div class="maincontent">
+    <nav class="navpage">
+        <ul>
+        {% for item in site.data.sitetree %}
+            {% if item.navitem == page.navitem %}
+                {% for subitem in item.children %}
+                <li><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
+                <p>{{ subitem.description }}</p></li>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </nav>
+</div>

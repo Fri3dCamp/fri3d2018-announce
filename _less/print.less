@@ -1,0 +1,55 @@
+@media print {
+    .subhead,
+    .mailinglist_social,
+    .slideshowwrapper,
+    .fri3d-slideshowwrapper {
+        display: none;
+    }
+
+    .pagefooter {
+        font-size: @fntsize-0;
+        border-top: 1px solid @clr-gray1;
+    }
+
+    .pagehead {
+        border-bottom: 1px solid @clr-gray1;
+        margin-bottom: (@margin*2);
+        background-image: none;
+        height: 80px;
+        padding: (@margin*2);
+        .logo {
+            height: 100%;
+            width: auto;
+            margin: 0;
+            img {
+                content: url("../img/logo-black.svg");
+            }
+        }
+    }
+    .printonly {
+        display: block;
+    }
+    .printonly-box {
+        border:1px solid @clr-black1;
+        padding:@margin*3;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .widecontent, .maincontent, .notice {
+        padding: (@margin*1);
+        max-width: @rulelength;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5em;
+        box-sizing: padding-box;
+    }
+    .breadcrumb {
+        max-width: @rulelength;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        font-size: @fntsize-0;
+    }
+}
